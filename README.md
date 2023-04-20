@@ -43,8 +43,13 @@ T0150##\r" > /dev/ttymxc2
 Things to test:
 
 -Does the order matter?
+
 -What does the T part do? Is this time spent to do it?
+
 -I note that there were multiple "CMD" types when I was stracing Mind
+
 -log the strace on mnt
+
 -it there a way of tracking any communication to /dev/ttymxc2
+
 -try strace with -e trace=file – Track file related syscalls
