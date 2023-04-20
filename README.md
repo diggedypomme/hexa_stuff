@@ -47,3 +47,4 @@ Things to test:
 -I note that there were multiple "CMD" types when I was stracing Mind
 -log the strace on mnt
 -it there a way of tracking any communication to /dev/ttymxc2
+-try strace with -e trace=file – Track file related syscalls
