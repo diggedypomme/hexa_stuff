@@ -1,0 +1,8 @@
+root@hexa:~# ls /dev
+autofs           disk     i2c-0        lirc0         loop3    mmcblk0boot0  mmcblk0p6    network_latency     ram1   ram2  ram9    stdin   tty12  tty19  tty25  tty31  tty38  tty44  tty50  tty57  tty63     urandom  vcs6   vcsa5
+block            dri      i2c-1        lircd         loop4    mmcblk0boot1  mmcblk0p7    network_throughput  ram10  ram3  random  stdout  tty13  tty2   tty26  tty32  tty39  tty45  tty51  tty58  tty7      vcs      vcs7   vcsa6
+bus              fd       i2c-2        log           loop5    mmcblk0p1     mmcblk0rpmb  null                ram11  ram4  rtc     tty     tty14  tty20  tty27  tty33  tty4   tty46  tty52  tty59  tty8      vcs1     vcsa   vcsa7
+char             full     iio:device0  loop-control  loop6    mmcblk0p2     mxc_asrc     ppp                 ram12  ram5  rtc0    tty0    tty15  tty21  tty28  tty34  tty40  tty47  tty53  tty6   tty9      vcs2     vcsa1  video0
+console          fuse     iio:device1  loop0         loop7    mmcblk0p3     mxc_ipu      ptmx                ram13  ram6  shm     tty1    tty16  tty22  tty29  tty35  tty41  tty48  tty54  tty60  ttymxc0   vcs3     vcsa2  watchdog
+core             galcore  input        loop1         mem      mmcblk0p4     mxc_vpu      pts                 ram14  ram7  snd     tty10   tty17  tty23  tty3   tty36  tty42  tty49  tty55  tty61  ttymxc2   vcs4     vcsa3  zero
+cpu_dma_latency  hwrng    kmsg         loop2         mmcblk0  mmcblk0p5     mxs_viim     ram0                ram15  ram8  stderr  tty11   tty18  tty24  tty30  tty37  tty43  tty5   tty56  tty62  ubi_ctrl  vcs5     vcsa4
