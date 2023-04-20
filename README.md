@@ -8,6 +8,10 @@ https://m.apkpure.com/hexa-programmable-robot/com.vincross.hexa
 note that this is listed as being a potential trojan
 
 
+root
+boot2mind
+
+
 ---------
 
 
