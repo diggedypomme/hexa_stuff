@@ -53,3 +53,5 @@ Things to test:
 -it there a way of tracking any communication to /dev/ttymxc2
 
 -try strace with -e trace=file – Track file related syscalls
+
+-can you get the camera working? Log what you have so far.
