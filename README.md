@@ -52,3 +52,11 @@ Things to test: <BR>
 -try catting the  /dev/ttymxc2 as you issue this command. try catting some other ones as you do too. <BR>
 -copy the full /dev list here
 -there was a file somehere with the servo details. take them and put it here <BR>
+  
+   <BR> <BR>
+-6 legs so 18 motors at 3 per motor: <BR>
+-18 motors in total <BR>
+-is the t part the head maybe? <BR>
+-can you kill Mind and still have it checking camera etc? <BR>
+-can you track it while taking a pic <BR>
+
