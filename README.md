@@ -49,3 +49,6 @@ Things to test: <BR>
 -it there a way of tracking any communication to /dev/ttymxc2 <BR>
 -try strace with -e trace=file – Track file related syscalls <BR>
 -can you get the camera working? Log what you have so far. <BR>
+-try catting the  /dev/ttymxc2 as you issue this command. try catting some other ones as you do too. <BR>
+-copy the full /dev list here
+-there was a file somehere with the servo details. take them and put it here <BR>
