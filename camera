@@ -1,0 +1,10 @@
+
+--- Opening v4l2:/dev/video0...
+/dev/video0 opened.
+Error starting stream.
+VIDIOC_STREAMON: Operation not permitted
+Unable to use mmap. Using read instead.
+--- Capturing frame...
+VIDIOC_DQBUF: Resource temporarily unavailable
+Segmentation fault
+root@hexa:/dev#
