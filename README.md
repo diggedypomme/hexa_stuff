@@ -16,9 +16,9 @@ his is what a command can look like from strace [pid  1447] write(7</dev/ttymxc2
 
 [11:07]Tremble: V00x = motor number, Pxxxx = servo position.
 [11:08]Tremble: Above command can be run from terminal, this way: echo "CMD7234 V005P1533V004P1383V003P1692V017P1515V016P1430V015P1768V011P1424V010P1413V009P1713V014P1544V013P1359V012P1670V002P1515V001P1450V000P1763V008P1398V007P1448V006P1737T0150##\r" > /dev/ttymxc2
+<BR><BR>
 
-
-CMD7234 
+CMD7234  <BR>
 V005 - P1533 <BR>
 V004 - P1383 <BR>
 V003 - P1692 <BR>
@@ -38,20 +38,14 @@ V008 - P1398 <BR>
 V007 - P1448 <BR>
 V006 - P1737 <BR>
 T0150##\r" > /dev/ttymxc2
+<BR><BR>
 
-
-Things to test:
-
--Does the order matter?
-
--What does the T part do? Is this time spent to do it?
-
--I note that there were multiple "CMD" types when I was stracing Mind
-
--log the strace on mnt
-
--it there a way of tracking any communication to /dev/ttymxc2
-
--try strace with -e trace=file – Track file related syscalls
-
--can you get the camera working? Log what you have so far.
+Things to test: <BR>
+<BR>
+-Does the order matter? <BR>
+-What does the T part do? Is this time spent to do it? <BR>
+-I note that there were multiple "CMD" types when I was stracing Mind <BR>
+-log the strace on mnt <BR>
+-it there a way of tracking any communication to /dev/ttymxc2 <BR>
+-try strace with -e trace=file – Track file related syscalls <BR>
+-can you get the camera working? Log what you have so far. <BR>
