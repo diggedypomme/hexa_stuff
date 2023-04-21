@@ -1,0 +1,143 @@
+starting with default config...
+[INFO] 1970/01/01 00:00:09 main_hexa.go:50: Starting MIND Daemon Version 0.6.1
+[INFO] 1970/01/01 00:00:09 main_hexa.go:55: Set system time to 2017-05-08 00:00:00 +0000 UTC
+[DEBUG] 2017/05/08 00:00:00 events.go:27: Ready to digest events
+[INFO] 2017/05/08 00:00:00 main_hexa.go:61: Preparing executors
+[INFO] 2017/05/08 00:00:00 main_hexa.go:63: Starting drivers
+[DEBUG] 2017/05/08 00:00:00 serial.go:36: Opened serial device: 3
+[DEBUG] 2017/05/08 00:00:00 hexa.go:225: STM32 SEND: V000P0150V001P0150V002P0150V003P0150V004P0150V005P0150V006P0150V007P0150V008P0150V009P0150V010P0150V011P0150V012P0150V013P0150V014P0150V015P0150V016P0150V017P0150T0000##
+[DEBUG] 2017/05/08 00:00:00 hexa.go:122: STM32 RECV: CMD0001: OK
+[DEBUG] 2017/05/08 00:00:00 hexa.go:103: CMD0001: OK
+[DEBUG] 2017/05/08 00:00:00 serial.go:36: Opened serial device: 4
+[DEBUG] 2017/05/08 00:00:00 hexa.go:225: STM32 SEND: V000P0150V001P0150V002P0150V003P0150V004P0150V005P0150V006P0150V007P0150V008P0150V009P0150V010P0150V011P0150V012P0150V013P0150V014P0150V015P0150V016P0150V017P0150T0000##
+[DEBUG] 2017/05/08 00:00:00 hexa.go:122: STM32 RECV: CMD0002: OK
+[DEBUG] 2017/05/08 00:00:00 hexa.go:103: CMD0002: OK
+[DEBUG] 2017/05/08 00:00:00 serial.go:36: Opened serial device: 5
+[DEBUG] 2017/05/08 00:00:00 hexa.go:225: STM32 SEND: V000P0150V001P0150V002P0150V003P0150V004P0150V005P0150V006P0150V007P0150V008P0150V009P0150V010P0150V011P0150V012P0150V013P0150V014P0150V015P0150V016P0150V017P0150T0000##
+[DEBUG] 2017/05/08 00:00:00 hexa.go:122: STM32 RECV: CMD0003: OK
+[DEBUG] 2017/05/08 00:00:00 hexa.go:103: CMD0003: OK
+[DEBUG] 2017/05/08 00:00:00 serial.go:36: Opened serial device: 6
+[DEBUG] 2017/05/08 00:00:00 hexa.go:225: STM32 SEND: V000P0150V001P0150V002P0150V003P0150V004P0150V005P0150V006P0150V007P0150V008P0150V009P0150V010P0150V011P0150V012P0150V013P0150V014P0150V015P0150V016P0150V017P0150T0000##
+[DEBUG] 2017/05/08 00:00:00 hexa.go:122: STM32 RECV: CMD0004: OK
+[DEBUG] 2017/05/08 00:00:00 hexa.go:103: CMD0004: OK
+[DEBUG] 2017/05/08 00:00:00 serial.go:36: Opened serial device: 7
+[DEBUG] 2017/05/08 00:00:00 hexa.go:225: STM32 SEND: V000P0150V001P0150V002P0150V003P0150V004P0150V005P0150V006P0150V007P0150V008P0150V009P0150V010P0150V011P0150V012P0150V013P0150V014P0150V015P0150V016P0150V017P0150T0000##
+[INFO] 2017/05/08 00:00:00 main_hexa.go:77: audio
+[INFO] 2017/05/08 00:00:00 main_hexa.go:77: stm32
+[INFO] 2017/05/08 00:00:00 main_hexa.go:77: hexabody
+[DEBUG] 2017/05/08 00:00:00 hexa.go:122: STM32 RECV: CMD0005: OK
+[DEBUG] 2017/05/08 00:00:00 hexa.go:103: CMD0005: OK
+[INFO] 2017/05/08 00:00:00 main_hexa.go:77: infrared
+[INFO] 2017/05/08 00:00:00 main_hexa.go:77: media
+[INFO] 2017/05/08 00:00:00 main_hexa.go:77: i2c
+[INFO] 2017/05/08 00:00:00 main_hexa.go:77: accelerometer
+[INFO] 2017/05/08 00:00:00 main_hexa.go:77: distance
+[INFO] 2017/05/08 00:00:00 main_hexa.go:77: example
+[INFO] 2017/05/08 00:00:00 main_hexa.go:77: wireless
+[INFO] 2017/05/08 00:00:00 main_hexa.go:77: adc
+[INFO] 2017/05/08 00:00:00 main_hexa.go:77: gpio
+[INFO] 2017/05/08 00:00:00 main_hexa.go:80: Starting services
+[DEBUG] 2017/05/08 00:00:00 updateDatabase.go:91: dbVersion is  6  incrementSql are  6
+[DEBUG] 2017/05/08 00:00:00 updateDatabase.go:104: Update database version succeed
+[INFO] 2017/05/08 00:00:00 main_hexa.go:86: Storage
+[DEBUG] 2017/05/08 00:00:00 wireless.go:305: running: /etc/init.d/hostapd [stop]
+[DEBUG] 2017/05/08 00:00:00 wireless.go:310:  * Stopping advanced IEEE 802.11 management hostapd
+   ...done.
+[DEBUG] 2017/05/08 00:00:00 wireless.go:305: running: killall [wpa_supplicant]
+[DEBUG] 2017/05/08 00:00:00 wireless.go:305: running: wpa_supplicant [-B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf]
+[DEBUG] 2017/05/08 00:00:01 wireless.go:310: 
+[DEBUG] 2017/05/08 00:00:01 wpa_ctrl.go:144: <<< ATTACH
+[DEBUG] 2017/05/08 00:00:01 wpa_ctrl.go:151: >>> OK
+
+[INFO] 2017/05/08 00:00:01 main_hexa.go:89: Wifi
+[INFO] 2017/05/08 00:00:01 main_hexa.go:92: MDNS
+[INFO] 2017/05/08 00:00:01 main_hexa.go:95: Skillmanager
+[INFO] 2017/05/08 00:00:01 wifi.go:172: Auto Connect WiFi
+[DEBUG] 2017/05/08 00:00:01 iw_ctrl.go:19: Scanning Wireless on interface: wlan0
+[DEBUG] 2017/05/08 00:00:01 wireless.go:76: WPA EVENT CTRL-EVENT-SCAN-STARTED
+[DEBUG] 2017/05/08 00:00:02 wireless.go:76: WPA EVENT CTRL-EVENT-BSS-ADDED
+[DEBUG] 2017/05/08 00:00:02 wireless.go:76: WPA EVENT CTRL-EVENT-BSS-ADDED
+[DEBUG] 2017/05/08 00:00:02 wireless.go:76: WPA EVENT CTRL-EVENT-BSS-ADDED
+[DEBUG] 2017/05/08 00:00:02 wireless.go:76: WPA EVENT CTRL-EVENT-BSS-ADDED
+[DEBUG] 2017/05/08 00:00:02 wireless.go:76: WPA EVENT CTRL-EVENT-BSS-ADDED
+[DEBUG] 2017/05/08 00:00:02 wireless.go:76: WPA EVENT CTRL-EVENT-BSS-ADDED
+[DEBUG] 2017/05/08 00:00:02 wireless.go:76: WPA EVENT CTRL-EVENT-BSS-ADDED
+[DEBUG] 2017/05/08 00:00:02 wireless.go:76: WPA EVENT CTRL-EVENT-BSS-ADDED
+[DEBUG] 2017/05/08 00:00:02 wireless.go:76: WPA EVENT CTRL-EVENT-BSS-ADDED
+[DEBUG] 2017/05/08 00:00:02 wireless.go:76: WPA EVENT CTRL-EVENT-BSS-ADDED
+[DEBUG] 2017/05/08 00:00:02 wireless.go:76: WPA EVENT CTRL-EVENT-BSS-ADDED
+[DEBUG] 2017/05/08 00:00:02 wireless.go:76: WPA EVENT CTRL-EVENT-BSS-ADDED
+[DEBUG] 2017/05/08 00:00:02 wireless.go:76: WPA EVENT CTRL-EVENT-BSS-ADDED
+[DEBUG] 2017/05/08 00:00:02 wireless.go:76: WPA EVENT CTRL-EVENT-BSS-ADDED
+[DEBUG] 2017/05/08 00:00:02 wireless.go:76: WPA EVENT CTRL-EVENT-BSS-ADDED
+[DEBUG] 2017/05/08 00:00:02 wireless.go:76: WPA EVENT CTRL-EVENT-SCAN-RESULTS
+[DEBUG] 2017/05/08 00:00:02 iw_ctrl.go:57: Get wifi list: [{BTWi-fi  18} {HP-Print-25-ENVY 5530 series  18} {dadv  70} {EE-Hub-6Ksn  20} {VM4274291  18} {Virgin Media  18} {ym  47} {dkin  62} {DVDA  70} {SKYAAT5N  19} {BT-CJC297  18}]
+[DEBUG] 2017/05/08 00:00:02 indicator.go:98: SET LED: 3
+[DEBUG] 2017/05/08 00:00:02 wireless.go:112: Connect To Wifi SSID: ym PSK: aaaazzzz
+[DEBUG] 2017/05/08 00:00:02 wpa_ctrl.go:144: <<< LIST_NETWORKS
+[DEBUG] 2017/05/08 00:00:02 wpa_ctrl.go:151: >>> network id / ssid / bssid / flags
+
+[DEBUG] 2017/05/08 00:00:02 wpa_ctrl.go:144: <<< ADD_NETWORK
+[DEBUG] 2017/05/08 00:00:02 wpa_ctrl.go:151: >>> 0
+
+[DEBUG] 2017/05/08 00:00:02 wpa_ctrl.go:144: <<< SET_NETWORK 0 ssid "ym"
+[DEBUG] 2017/05/08 00:00:02 wpa_ctrl.go:151: >>> OK
+
+[DEBUG] 2017/05/08 00:00:02 wpa_ctrl.go:144: <<< SET_NETWORK 0 psk "aaaazzzz"
+[DEBUG] 2017/05/08 00:00:02 wpa_ctrl.go:151: >>> OK
+
+[DEBUG] 2017/05/08 00:00:02 wpa_ctrl.go:144: <<< SET_NETWORK 0 key_mgmt WPA-PSK
+[DEBUG] 2017/05/08 00:00:02 wpa_ctrl.go:151: >>> OK
+
+[DEBUG] 2017/05/08 00:00:02 wpa_ctrl.go:144: <<< SELECT_NETWORK 0
+[DEBUG] 2017/05/08 00:00:02 wpa_ctrl.go:151: >>> OK
+
+[DEBUG] 2017/05/08 00:00:04 wireless.go:76: WPA EVENT CTRL-EVENT-CONNECTED
+[DEBUG] 2017/05/08 00:00:04 wireless.go:305: running: dhclient [-r wlan0]
+[DEBUG] 2017/05/08 00:00:04 wireless.go:310: 
+[DEBUG] 2017/05/08 00:00:04 wireless.go:305: running: dhclient [wlan0]
+[DEBUG] 2017/05/08 00:00:04 wireless.go:310: 
+[DEBUG] 2017/05/08 00:00:04 wireless.go:305: running: /etc/init.d/hostapd [stop]
+[DEBUG] 2017/05/08 00:00:04 wireless.go:310:  * Stopping advanced IEEE 802.11 management hostapd
+   ...done.
+[DEBUG] 2017/05/08 00:00:04 wireless.go:305: running: /etc/init.d/isc-dhcp-server [stop]
+[DEBUG] 2017/05/08 00:00:04 hexa.go:122: STM32 RECV: EVT: TEMPERATURE: 27.0
+[DEBUG] 2017/05/08 00:00:04 hexa.go:100: EVT: TEMPERATURE: 27.0
+[DEBUG] 2017/05/08 00:00:04 hexa.go:122: STM32 RECV: EVT: POWER: SOC5VOLT6.995
+[DEBUG] 2017/05/08 00:00:04 hexa.go:100: EVT: POWER: SOC5VOLT6.995
+[DEBUG] 2017/05/08 00:00:04 hexa.go:122: STM32 RECV: EVTLOG: POWER: current -483.438 mA
+[DEBUG] 2017/05/08 00:00:04 hexa.go:100: EVTLOG: POWER: current -483.438 mA
+[DEBUG] 2017/05/08 00:00:04 wireless.go:310:  * Stopping ISC DHCP server dhcpd
+   ...fail!
+[DEBUG] 2017/05/08 00:00:04 wireless.go:168: Wifi connected
+[INFO] 2023/04/18 11:06:43 wifi.go:140: sync time with http success
+[WARNING] 2023/04/18 11:06:52 wifi.go:153: sync time with ntpdate success
+[DEBUG] 2023/04/18 11:06:52 indicator.go:98: SET LED: 4
+[INFO] 2023/04/18 11:06:52 main_hexa.go:98: Startup
+[INFO] 2023/04/18 11:06:52 main_hexa.go:108: UDP
+[INFO] 2023/04/18 11:06:52 main_hexa.go:116: MIND Socket
+[DEBUG] 2023/04/18 11:06:52 server.go:113: wss listening on address :7589
+[DEBUG] 2023/04/18 11:06:52 server.go:70: ws listening on address :7588
+[DEBUG] 2023/04/18 11:06:52 server.go:93: websocket connecting server wss://cloud.vincross.com/robots?sn=102245017962&secretid=0435196e25364574ca0f58c00e825377
+[DEBUG] 2023/04/18 11:06:52 hexa.go:225: STM32 SEND: GETMD5
+[DEBUG] 2023/04/18 11:06:52 hexa.go:225: STM32 SEND: GETCHARGERSTAT
+[DEBUG] 2023/04/18 11:06:52 hexa.go:122: STM32 RECV: fw md5sum 206513cd9167592c53ffd9bd761a2d9a
+[WARNING] 2023/04/18 11:06:52 hexa.go:239: open /etc/mind/sbf.bin: no such file or directory
+[DEBUG] 2023/04/18 11:06:52 hexa.go:122: STM32 RECV: CMD0006: OK
+[DEBUG] 2023/04/18 11:06:52 hexa.go:122: STM32 RECV: charger out
+[DEBUG] 2023/04/18 11:06:52 hexa.go:122: STM32 RECV: CMD0007: OK
+[DEBUG] 2023/04/18 11:06:52 hexa.go:103: CMD0006: OK
+[DEBUG] 2023/04/18 11:06:52 indicator.go:98: SET LED: 8
+[DEBUG] 2023/04/18 11:06:52 hexa.go:103: CMD0007: OK
+[DEBUG] 2023/04/18 11:06:53 hexa.go:122: STM32 RECV: EVT: TEMPERATURE: 27.0
+[DEBUG] 2023/04/18 11:06:53 hexa.go:100: EVT: TEMPERATURE: 27.0
+[DEBUG] 2023/04/18 11:06:53 hexa.go:122: STM32 RECV: EVT: POWER: SOC5VOLT7.041
+[DEBUG] 2023/04/18 11:06:53 indicator.go:98: SET LED: 8
+[DEBUG] 2023/04/18 11:06:53 hexa.go:122: STM32 RECV: EVTLOG: POWER: current -533.750 mA
+[DEBUG] 2023/04/18 11:06:53 hexa.go:100: EVT: POWER: SOC5VOLT7.041
+[DEBUG] 2023/04/18 11:06:53 hexa.go:100: EVTLOG: POWER: current -533.750 mA
+[DEBUG] 2023/04/18 11:06:55 httpapi.go:42: body: {"data":{"trustUsers":[{"firstName":"doge","lastName":"fizola","userhash":"6d0c72a791044afd95e8b4bc77b946c1","firstConnectTime":"2023-04-18T11:00:51.839949001Z","lastConnectTime":"2023-04-18T11:01:50.818334334Z","connectCount":2,"userType":2,"robotIsOnline":false}]},"code":"OK","message":"OK"}
+[DEBUG] 2023/04/18 11:06:55 httpapi.go:28: HTTP: PUT /robot-service/v1/robots/me/trustUsers <nil>
+[DEBUG] 2023/04/18 11:06:55 httpapi.go:42: body: {"data":{"robots":[{"sn":"102245017962","secretID":"0435196e25364574ca0f58c00e825377","nickname":"HEXA","type":"HEXA","activeTime":"2018-08-06T15:21:13.713098Z","lastLoginTime":"2023-04-18T11:06:54.035208Z","createTime":"2018-02-13T03:39:07.298302Z","updateTime":"2023-04-18T11:06:55.254799525Z","status":2}]},"code":"OK","message":"OK"}
+[DEBUG] 2023/04/18 11:06:55 httpapi.go:28: HTTP: PATCH /robot-service/v1/robots/me <nil>
+[DEBUG] 2023/04/18 11:06:55 connection.go:42: Send 2 1 
