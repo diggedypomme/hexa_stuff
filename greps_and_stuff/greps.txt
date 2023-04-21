@@ -1,0 +1,76 @@
+
+root@hexa:/home# find / | grep servo
+/boot/servo.cfg
+
+
+
+root@hexa:/home# ^C
+root@hexa:/home# find / | grep walk
+/usr/local/go/src/cmd/compile/internal/gc/racewalk.go
+/usr/local/go/src/cmd/compile/internal/gc/walk.go
+/usr/local/go/src/go/ast/walk.go
+/usr/local/go/doc/codewalk
+/usr/local/go/doc/codewalk/run
+/usr/local/go/doc/codewalk/pig.go
+/usr/local/go/doc/codewalk/codewalk.xml
+/usr/local/go/doc/codewalk/urlpoll.go
+/usr/local/go/doc/codewalk/sharemem.xml
+/usr/local/go/doc/codewalk/functions.xml
+/usr/local/go/doc/codewalk/codewalk.css
+/usr/local/go/doc/codewalk/markov.xml
+/usr/local/go/doc/codewalk/markov.go
+/usr/local/go/doc/codewalk/codewalk.js
+/usr/local/go/doc/codewalk/popout.png
+/usr/share/man/man3/twalk.3.gz
+root@hexa:/home#
+
+
+
+/var/mind/skills/dance/bin/dance
+root@hexa:/home# /var/mind/skills/dance/bin/dance
+starting with default config...
+2023/04/21 12:53:47 rpc.Register: type Hexabody has no exported methods of suitable type
+[ERROR] 2023/04/21 12:53:57 unix.go:217: dial unix /var/mind/skills/receive-dance/var/mind/rpc/receive-dance.sock: connect: no such file or directory
+[ERROR] 2023/04/21 12:53:57 driver.go:48: stat /var/mind/skills/receive-dance/var/mind/rpc/receive-dance.sock: no such file or directory
+[ERROR] 2023/04/21 12:53:57 driver.go:152: stat /var/mind/skills/receive-dance/var/mind/rpc/receive-dance.sock: no such file or directory
+[ERROR] 2023/04/21 12:53:57 driver.go:278: stat /var/mind/skills/receive-dance/var/mind/rpc/receive-dance.sock: no such file or directory
+
+
+root@hexa:/home# ls /var/mind/
+rpc  skills
+root@hexa:/home# ls /var/mind/rpc
+SimulatorKit.sock  dance.sock  explorer.sock
+root@hexa:/home# cat /var/mind/rpc/explorer.sock
+cat: /var/mind/rpc/explorer.sock: No such device or address
+root@hexa:/home#
+
+
+
+root@hexa:/var/mind/skills/SimulatorKit/bin# ls
+SimulatorKit
+root@hexa:/var/mind/skills/SimulatorKit/bin# SimulatorKit
+-bash: SimulatorKit: command not found
+root@hexa:/var/mind/skills/SimulatorKit/bin# ./SimulatorKit
+starting with default config...
+2023/04/21 12:56:00 rpc.Register: type Hexabody has no exported methods of suitable type
+[ERROR] 2023/04/21 12:56:10 unix.go:217: dial unix /var/mind/skills/receive-SimulatorKit/var/mind/rpc/receive-SimulatorKit.sock: connect: no such file or directory
+[ERROR] 2023/04/21 12:56:10 driver.go:48: stat /var/mind/skills/receive-SimulatorKit/var/mind/rpc/receive-SimulatorKit.sock: no such file or directory
+[Debug] 2023/04/21 12:56:10 SimulatorKit.go:39: resend
+[ERROR] 2023/04/21 12:56:10 driver.go:356: stat /var/mind/skills/receive-SimulatorKit/var/mind/rpc/receive-SimulatorKit.sock: no such file or directory
+[Debug] 2023/04/21 12:56:10 SimulatorKit.go:42: RESET
+[Debug] 2023/04/21 12:56:15 SimulatorKit.go:39: resend
+[ERROR] 2023/04/21 12:56:15 driver.go:356: stat /var/mind/skills/receive-SimulatorKit/var/mind/rpc/receive-SimulatorKit.sock: no such file or directory
+[Debug] 2023/04/21 12:56:15 SimulatorKit.go:42: RESET
+
+
+root@hexa:/var/mind/skills/SimulatorKit/log# ls
+stderr  stdout
+root@hexa:/var/mind/skills/SimulatorKit/log# cat stderr
+2023/04/19 12:49:45 rpc.Register: type Hexabody has no exported methods of suitable type
+
+Session terminated, terminating shell... ...terminated.
+root@hexa:/var/mind/skills/SimulatorKit/log# cat stdout
+starting with default config...
+root@hexa:/var/mind/skills/SimulatorKit/log#
+
+
