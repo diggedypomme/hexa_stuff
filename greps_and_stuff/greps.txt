@@ -74,3 +74,24 @@ starting with default config...
 root@hexa:/var/mind/skills/SimulatorKit/log#
 
 
+
+2023/04/19 12:42:58 rpc.Register: type Hexabody has no exported methods of suitable type
+[INFO] 2023/04/19 12:43:12 dance.go:212: {"action":"bodyDance","name":"Dance05"}
+[INFO] 2023/04/19 12:43:12 dance.go:244: bodyDance
+[INFO] 2023/04/19 12:43:12 dance.go:212: {"action":"bodyStop"}
+[INFO] 2023/04/19 12:43:12 dance.go:244: bodyStop
+[INFO] 2023/04/19 12:43:16 dance.go:212: {"action":"bodyDance","name":"Dance01"}
+[INFO] 2023/04/19 12:43:16 dance.go:244: bodyDance
+[INFO] 2023/04/19 12:43:20 dance.go:212: {"action":"bodyDance","name":"Dance08"}
+[INFO] 2023/04/19 12:43:20 dance.go:244: bodyDance
+[INFO] 2023/04/19 12:43:41 dance.go:212: {"action":"reset"}
+[INFO] 2023/04/19 12:43:41 dance.go:244: reset
+[INFO] 2023/04/19 12:43:44 dance.go:212: {"action":"speedRegulation","rate":0.94}
+[INFO] 2023/04/19 12:43:44 dance.go:244: speedRegulation
+[INFO] 2023/04/19 12:43:44 dance.go:212: {"action":"speedRegulation","rate":0.912}
+[INFO] 2023/04/19 12:43:44 dance.go:212: {"action":"speedRegulation","rate":0.88}
+[INFO] 2023/04/19 12:43:44 dance.go:244: speedRegulation
+[INFO] 2023/04/19 12:43:44 dance.go:244: speedRegulation
+[INFO] 2023/04/19 12:43:44 dance.go:212: {"action":"speedRegulation","rate":0.763}
+[INFO] 2023/04/19 12:43:44 dance.go:244: speedRegulation
+
