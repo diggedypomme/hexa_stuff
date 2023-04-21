@@ -1,0 +1,47 @@
+execve("/bin/cat", ["cat", "/dev/ttymxc2"], [/* 17 vars */]) = 0
+brk(0)                                  = 0xe6d000
+uname({sys="Linux", node="hexa", ...})  = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76f7d000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=63884, ...}) = 0
+mmap2(NULL, 63884, PROT_READ, MAP_PRIVATE, 3, 0) = 0x76f51000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\215w\1\0004\0\0\0"..., 512) = 512
+lseek(3, 899996, SEEK_SET)              = 899996
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 2880) = 2880
+lseek(3, 896548, SEEK_SET)              = 896548
+read(3, "A4\0\0\0aeabi\0\1*\0\0\0\0057-A\0\6\n\7A\10\1\t\2\n\3\f"..., 53) = 53
+fstat64(3, {st_mode=S_IFREG|0755, st_size=902876, ...}) = 0
+mmap2(NULL, 906664, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76e73000
+mmap2(0x76f4b000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd8000) = 0x76f4b000
+mmap2(0x76f4e000, 9640, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x76f4e000
+close(3)                                = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76f7c000
+set_tls(0x76f7c850, 0x76f81050, 0x76f7cf38, 0x76f7c850, 0x76f81050) = 0
+mprotect(0x76f4b000, 8192, PROT_READ)   = 0
+mprotect(0x16000, 4096, PROT_READ)      = 0
+mprotect(0x76f80000, 4096, PROT_READ)   = 0
+munmap(0x76f51000, 63884)               = 0
+brk(0)                                  = 0xe6d000
+brk(0xe8e000)                           = 0xe8e000
+fstat64(1, {st_mode=S_IFCHR|0600, st_rdev=makedev(136, 2), ...}) = 0
+open("/dev/ttymxc2", O_RDONLY|O_LARGEFILE) = 3
+fstat64(3, {st_mode=S_IFCHR|0600, st_rdev=makedev(207, 18), ...}) = 0
+fadvise64_64(3, 0, 0, POSIX_FADV_SEQUENTIAL) = 0
+read(3, "EV", 65536)                    = 2
+write(1, "EV", 2EV)                       = 2
+read(3, "TLOG: POWE", 65536)            = 10
+write(1, "TLOG: POWE", 10TLOG: POWE)              = 10
+read(3, "E", 65536)                     = 1
+write(1, "E", 1E)                        = 1
+read(3, "T", 65536)                     = 1
+write(1, "T", 1T)                        = 1
+read(3, "5", 65536)                     = 1
+write(1, "5", 15)                        = 1
+read(3, "EVT: T", 65536)                = 6
+write(1, "EVT: T", 6EVT: T)                   = 6
+read(3,
