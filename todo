@@ -1,0 +1,9 @@
+add a parser for the command or for the text that will set the boxes accordingly
+also update the one that jinja pulls in
+add buttons to toggle between them
+
+create a walk cycle
+
+
+get the right charger or a smalle rcharger so you can wire to it
+correct cvharge voltage
