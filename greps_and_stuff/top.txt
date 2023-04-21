@@ -2,3 +2,81 @@
   963 root      20   0   22976  10540   2916 S   2.3  1.0   0:01.25 python
   654 root      20   0  914588  13924   8588 S   0.7  1.4   0:03.21 mind.d
   930 root      20   0    2516   1096    736 R   0.7  0.1   0:00.63 top
+
+
+
+root@hexa:~# strace -p 654
+Process 654 attached
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+
+
+   14 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/1:0H
+   15 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 khelper
+   16 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kdevtmpfs
+   17 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/0:1
+   18 root      20   0       0      0      0 S   0.0  0.0   0:00.48 kworker/1:1
+   19 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 writeback
+   20 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 bioset
+   21 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kblockd
+   22 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 ata_sff
+   23 root      20   0       0      0      0 S   0.0  0.0   0:00.02 khubd
+   24 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/u4:1
+   39 root     -50   0       0      0      0 S   0.0  0.0   0:00.00 ipu1_task
+   40 root     -50   0       0      0      0 S   0.0  0.0   0:00.00 ipu1_task
+   41 root     -50   0       0      0      0 S   0.0  0.0   0:00.00 ipu2_task
+   42 root     -50   0       0      0      0 S   0.0  0.0   0:00.00 ipu2_task
+   43 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 cfg80211
+   44 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 rpciod
+   45 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kswapd0
+   46 root      20   0       0      0      0 S   0.0  0.0   0:00.00 fsnotify_mark
+   47 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 nfsiod
+   48 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 crypto
+root@hexa:~# strace -p 654
+Process 654 attached
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+select(0, NULL, NULL, NULL, {0, 3})     = 0 (Timeout)
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+select(0, NULL, NULL, NULL, {0, 3})     = 0 (Timeout)
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+select(0, NULL, NULL, NULL, {0, 3})     = 0 (Timeout)
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+select(0, NULL, NULL, NULL, {0, 3})     = 0 (Timeout)
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+epoll_wait(13, {}, 128, 0)              = 0
+epoll_wait(13, {{EPOLLIN|EPOLLOUT, {u32=1125854816, u64=1125854816}}}, 128, -1) = 1
+clock_gettime(CLOCK_MONOTONIC, {207, 433661355}) = 0
+futex(0xb4d6ac, FUTEX_WAKE, 1)          = 1
+read(22, "\27\3\3\0\36\20xl\325nm\t\336W{\270*\352\234%j\346\17\t\34\362\3646\270OC\333"..., 1024) = 35
+futex(0x5554ed2c, FUTEX_WAKE, 1)        = 1
+read(22, 0x55712800, 1024)              = -1 EAGAIN (Resource temporarily unavailable)
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+write(8, "0", 1)                        = 1
+write(9, "0", 1)                        = 1
+write(10, "0", 1)                       = 1
+write(8, "0", 1)                        = 1
+write(9, "0", 1)                        = 1
+write(10, "23", 2)                      = 2
+futex(0x556145ac, FUTEX_WAKE, 1)        = 1
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
+futex(0xb4ddbc, FUTEX_WAIT, 0, NULL)    = 0
