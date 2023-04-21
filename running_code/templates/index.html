@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Robot Control 3</title>
+  </head>
+  <body>
+
+    <h1>Robot Control 3</h1>
+{{servoarray }}<BR><BR>
+{{leg_names}}<BR><BR>
+<BR><BR>
+
+<BR>
+    <form method="POST">
+      <p>Enter new values:</p>
+leg_names = [(0, 'tip'), (0, 'mid'), (0, 'rotate'), (2, 'tip'), (2, 'mid'), (2, 'rotate'), (1, 'tip'), (1, 'mid'), (1, 'rotate'), (4, 'tip'), (4, 'mid'), (4, 'rotate'), (5, 'tip'), (5, 'mid'), (5, 'rotate'), (3, 'tip'), (3, 'mid'), (3, 'rotate')]
+
+{% for i in range(servoarray|count) %}
+<div>
+    <label for="slider_{{i}}">Leg {{ leg_names[i][0] }}, {{ leg_names[i][1] }}:</label>
+    <input type="range" min="1000" max="2000" id="slider_{{i}}" name="{{ servoarray[i][0] }}" value="{{ servoarray[i][1] }}" oninput="document.getElementById('box_{{i}}').value = this.value;">
+    <input type="text" id="box_{{i}}" name="{{ servoarray[i][0] }}" value="{{ servoarray[i][1] }}" onchange="document.getElementById('slider_{{i}}').value = this.value;">
+</div>
+{% endfor %}
+ 
+    </form>
+<button type="submit2" onclick="send2()">Send2</button>
+  </body>
+
+<script>
+function send2()
+{
+
+let longstring=""
+longstring=longstring+"V005"+"P"+document.getElementById( "box_5" ).value
+longstring=longstring+"V004"+"P"+document.getElementById( "box_4" ).value
+longstring=longstring+"V003"+"P"+document.getElementById( "box_3" ).value
+longstring=longstring+"V017"+"P"+document.getElementById( "box_17" ).value
+longstring=longstring+"V016"+"P"+document.getElementById( "box_16" ).value
+longstring=longstring+"V015"+"P"+document.getElementById( "box_15" ).value
+longstring=longstring+"V011"+"P"+document.getElementById( "box_11" ).value
+longstring=longstring+"V010"+"P"+document.getElementById( "box_10" ).value
+longstring=longstring+"V009"+"P"+document.getElementById( "box_9" ).value
+longstring=longstring+"V014"+"P"+document.getElementById( "box_14" ).value
+longstring=longstring+"V013"+"P"+document.getElementById( "box_13" ).value
+longstring=longstring+"V012"+"P"+document.getElementById( "box_12" ).value
+longstring=longstring+"V002"+"P"+document.getElementById( "box_2" ).value
+longstring=longstring+"V001"+"P"+document.getElementById( "box_1" ).value
+longstring=longstring+"V000"+"P"+document.getElementById( "box_0" ).value
+longstring=longstring+"V008"+"P"+document.getElementById( "box_8" ).value
+longstring=longstring+"V007"+"P"+document.getElementById( "box_7" ).value
+longstring=longstring+"V006"+"P"+document.getElementById( "box_6" ).value
+
+const url = '/send/'+longstring;
+const params = {
+  method: 'GET',
+  headers: {
+    'Content-Type': 'application/json'
+  }
+};
+
+fetch(url, params)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.error(error);
+  });
+
+console.log(longstring)
+}
+
+
+
+</script>
+
+<style>
+  /* Adjust the positioning of the slider and text box */
+  input[type="range"] {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+  }
+  input[type="text"] {
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+  }
+  /* Adjust the position of the label */
+  label {
+    display: inline-block;
+    width: 5%;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    text-align: right;
+  }
+</style>
+</html>
+
+
+       
