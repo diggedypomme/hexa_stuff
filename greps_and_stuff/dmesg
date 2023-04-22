@@ -1,0 +1,424 @@
+[    6.768578] RTL871X: Index24G_CCK_Base[0][6] = 0x2e
+[    6.768583] RTL871X: Index24G_BW40_Base[0][6] = 0x34
+[    6.768588] RTL871X: ======= Path 0, Channel 7 =======
+[    6.768593] RTL871X: Index24G_CCK_Base[0][7] = 0x2e
+[    6.768598] RTL871X: Index24G_BW40_Base[0][7] = 0x34
+[    6.768603] RTL871X: ======= Path 0, Channel 8 =======
+[    6.768608] RTL871X: Index24G_CCK_Base[0][8] = 0x2e
+[    6.768612] RTL871X: Index24G_BW40_Base[0][8] = 0x34
+[    6.768617] RTL871X: ======= Path 0, Channel 9 =======
+[    6.768622] RTL871X: Index24G_CCK_Base[0][9] = 0x2b
+[    6.768627] RTL871X: Index24G_BW40_Base[0][9] = 0x31
+[    6.768632] RTL871X: ======= Path 0, Channel 10 =======
+[    6.768637] RTL871X: Index24G_CCK_Base[0][10] = 0x2b
+[    6.768643] RTL871X: Index24G_BW40_Base[0][10] = 0x31
+[    6.768649] RTL871X: ======= Path 0, Channel 11 =======
+[    6.768654] RTL871X: Index24G_CCK_Base[0][11] = 0x2b
+[    6.768660] RTL871X: Index24G_BW40_Base[0][11] = 0x31
+[    6.768665] RTL871X: ======= Path 0, Channel 12 =======
+[    6.768670] RTL871X: Index24G_CCK_Base[0][12] = 0x2b
+[    6.768675] RTL871X: Index24G_BW40_Base[0][12] = 0x31
+[    6.768680] RTL871X: ======= Path 0, Channel 13 =======
+[    6.768685] RTL871X: Index24G_CCK_Base[0][13] = 0x2b
+[    6.768691] RTL871X: Index24G_BW40_Base[0][13] = 0x31
+[    6.768696] RTL871X: ======= Path 0, Channel 14 =======
+[    6.768701] RTL871X: Index24G_CCK_Base[0][14] = 0x2b
+[    6.768705] RTL871X: Index24G_BW40_Base[0][14] = 0x31
+[    6.768710] RTL871X: ======= TxCount 0 =======
+[    6.768715] RTL871X: CCK_24G_Diff[0][0]= 0
+[    6.768720] RTL871X: OFDM_24G_Diff[0][0]= 1
+[    6.768725] RTL871X: BW20_24G_Diff[0][0]= -1
+[    6.768730] RTL871X: BW40_24G_Diff[0][0]= 0
+[    6.768735] RTL871X: EEPROMRegulatory = 0x0
+[    6.768743] RTL871X: hal_com_config_channel_plan chplan:0x20
+[    6.768749] RTL871X: CrystalCap: 0x13
+[    6.768754] RTL871X: EEPROM Customer ID: 0x 0
+[    6.768760] RTL871X: EEPROM : AntDivCfg = 0, TRxAntDivType = 3
+[    6.768764] RTL871X: Board Type: 0x 0
+[    6.768768] RTL871X: ThermalMeter = 0x1a
+[    6.768774] RTL871X: rtw_hal_read_chip_info in 40 ms
+[    6.768888] RTL871X: init_channel_set((null)) ChannelPlan ID:0x20, ch num:13
+[    6.769318] RTL871X: NR_RECVBUFF: 8
+[    6.769332] RTL871X: MAX_RECVBUF_SZ: 15360
+[    6.769343] RTL871X: NR_PREALLOC_RECV_SKB: 8
+[    6.769347] RTL871X: Enable CONFIG_FIX_NR_BULKIN_BUFFER
+[    6.769507] RTL871X: rtw_alloc_macid((null)) if1, hwaddr:ff:ff:ff:ff:ff:ff macid:1
+[    6.769597] RTL871X: pwrctrlpriv.bSupportRemoteWakeup~~~~~~
+[    6.769606] RTL871X: pwrctrlpriv.bSupportRemoteWakeup~~~[1]~~~
+[    6.769613] RTL871X: can't get autopm:
+[    6.769623] RTL871X: rtw_macaddr_cfg mac addr:68:ca:00:01:21:81
+[    6.769631] RTL871X: bDriverStopped:True, bSurpriseRemoved:False, bup:0, hw_init_completed:0
+[    6.769847] RTL871X: init_channel_set((null)) ChannelPlan ID:0x20, ch num:13
+[    6.770340] RTL871X: NR_RECVBUFF: 8
+[    6.770349] RTL871X: MAX_RECVBUF_SZ: 15360
+[    6.770359] RTL871X: NR_PREALLOC_RECV_SKB: 8
+[    6.770364] RTL871X: Enable CONFIG_FIX_NR_BULKIN_BUFFER
+[    6.770535] RTL871X: rtw_alloc_macid((null)) if2, hwaddr:ff:ff:ff:ff:ff:ff macid:1
+[    6.770619] RTL871X: rtw_wiphy_alloc(phy0)
+[    6.770629] RTL871X: rtw_wdev_alloc(padapter=c09d1000)
+[    6.770667] RTL871X: rtw_wiphy_alloc(phy1)
+[    6.770673] RTL871X: rtw_wdev_alloc(padapter=c0ab5000)
+[    6.770685] RTL871X: rtw_wiphy_register(phy0)
+[    6.770922] RTL871X: rtw_ndev_init(wlan0) if1 mac_addr=68:ca:00:01:21:81
+[    6.771772] RTL871X: rtw_wiphy_register(phy1)
+[    6.771907] RTL871X: rtw_ndev_init(wlan1) if2 mac_addr=6a:ca:00:01:21:81
+[    6.773047] usbcore: registered new interface driver rtl8188eu
+[    6.773057] RTL871X: module init ret=0
+[    6.920039] EXT3-fs (mmcblk0p1): warning: maximal mount count reached, running e2fsck is recommended
+[    6.920081] kjournald starting.  Commit interval 5 seconds
+[    6.922775] EXT3-fs (mmcblk0p1): using internal journal
+[    6.922791] EXT3-fs (mmcblk0p1): recovery complete
+[    6.922799] EXT3-fs (mmcblk0p1): mounted filesystem with ordered data mode
+[    7.457522] kjournald starting.  Commit interval 5 seconds
+[    7.463352] EXT3-fs (mmcblk0p6): using internal journal
+[    7.466338] EXT3-fs (mmcblk0p6): recovery complete
+[    7.466349] EXT3-fs (mmcblk0p6): mounted filesystem with ordered data mode
+[    7.545122] kjournald starting.  Commit interval 5 seconds
+[    7.547941] EXT3-fs (mmcblk0p7): using internal journal
+[    7.547959] EXT3-fs (mmcblk0p7): recovery complete
+[    7.547967] EXT3-fs (mmcblk0p7): mounted filesystem with ordered data mode
+[    8.301173] init: failsafe main process (458) killed by TERM signal
+[    9.040269] init: anacron main process (506) terminated with status 1
+[    9.252247] lirc_gpioblaster lirc_gpioblaster.0: lirc_dev: driver lirc_gpioblaster registered at minor = 0
+[    9.252259] lirc_gpioblaster: driver registered!
+[    9.328966] init: alsa-restore main process (529) terminated with status 99
+[    9.685184] init: isc-dhcp-server main process (578) terminated with status 1
+[    9.685306] init: isc-dhcp-server main process ended, respawning
+[    9.964410] init: plymouth-upstart-bridge main process ended, respawning
+[   10.488496] init: isc-dhcp-server main process (681) terminated with status 1
+[   10.488551] init: isc-dhcp-server main process ended, respawning
+[   10.650239] init: isc-dhcp-server main process (689) terminated with status 1
+[   10.650297] init: isc-dhcp-server main process ended, respawning
+[   10.785915] init: isc-dhcp-server main process (700) terminated with status 1
+[   10.785969] init: isc-dhcp-server main process ended, respawning
+[   10.916042] init: isc-dhcp-server main process (715) terminated with status 1
+[   10.916101] init: isc-dhcp-server main process ended, respawning
+[   11.143009] init: isc-dhcp-server main process (723) terminated with status 1
+[   11.143083] init: isc-dhcp-server main process ended, respawning
+[   11.268793] init: isc-dhcp-server main process (731) terminated with status 1
+[   11.268867] init: isc-dhcp-server main process ended, respawning
+[   11.380042] init: isc-dhcp-server main process (742) terminated with status 1
+[   11.380104] init: isc-dhcp-server main process ended, respawning
+[   11.502726] init: isc-dhcp-server main process (750) terminated with status 1
+[   11.502777] init: isc-dhcp-server main process ended, respawning
+[   11.628311] init: isc-dhcp-server main process (759) terminated with status 1
+[   11.628432] init: isc-dhcp-server main process ended, respawning
+[   11.861746] init: isc-dhcp-server main process (770) terminated with status 1
+[   11.861800] init: isc-dhcp-server respawning too fast, stopped
+[   12.068909] RTL871X: +871x_drv - drv_open, bup=0
+[   12.068924] RTL871X: Set RF Chip ID to RF_6052 and RF type to 3.
+[   12.069786] RTL871X: rtl8188e_FirmwareDownload fw:NIC, size: 15414
+[   12.069799] RTL871X: rtl8188e_FirmwareDownload: fw_ver=16 fw_subver=0000 sig=0x88e1, Month=11, Date=58, Hour=16, Minute=3c
+[   12.101699] RTL871X: polling_fwdl_chksum: Checksum report OK! (1, 0ms), REG_MCUFWDL:0x00030005
+[   12.104056] RTL871X: =====> _8051Reset88E(): 8051 reset success .
+[   12.106944] RTL871X: _FWFreeToGo: Polling FW ready OK! (18, 10ms), REG_MCUFWDL:0x000300c6
+[   12.106966] RTL871X: FWDL success. write_fw:1, 40ms
+[   12.426076] ==> rtl8188e_iol_efuse_patch
+[   12.569197] RTL871X: pDM_Odm TxPowerTrackControl = 1
+[   12.569439] RTL871X: pDM_Odm TxPowerTrackControl = 1
+[   12.790033] RTL871X: rtl8188eu_hal_init in 720ms
+[   12.796160] RTL871X: wlan0Port-0  set opmode = 2
+[   12.797158] RTL871X: MAC Address = 68:ca:00:01:21:81
+[   12.797486] RTL871X: rtw_cfg80211_init_wiphy:rf_type=3
+[   12.797497] RTL871X: [HT] HAL Support STBC = 0x01
+[   12.797514] RTL871X: +871x_drv - if2_open, bup=0
+[   12.797521] RTL871X: rtw_cfg80211_init_wiphy:rf_type=3
+[   12.797527] RTL871X: [HT] HAL Support STBC = 0x01
+[   12.797539] RTL871X: -871x_drv - if2_open, bup=1
+[   12.797544] RTL871X: -871x_drv - drv_open, bup=1
+[   12.797596] RTL871X: cfg80211_rtw_set_power_mgmt(wlan0) enabled:0, timeout:-1
+[   12.797616] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   12.845757] RTL871X: cfg80211_rtw_flush_pmksa(wlan0)
+[   12.933385] RTL871X: cfg80211_rtw_scan(wlan0)
+[   12.934211] RTL871X: SetHwReg8188E:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+[   14.283960] RTL871X: survey done event(36) band:0 for wlan0
+[   14.284163] RTL871X: rtw_indicate_scan_done(wlan0)
+[   14.284955] RTL871X: ==>rtw_ps_processor .fw_state(8)
+[   14.284976] RTL871X: ==>ips_enter cnts:1
+[   14.284988] RTL871X: nolinked power save enter
+[   14.285000] RTL871X: ===> rtw_ips_pwr_down...................
+[   14.285012] RTL871X: ====> rtw_ips_dev_unload...
+[   14.319323] RTL871X: usb_read_port_cancel
+[   14.319475] RTL871X: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(False)
+[   14.319635] RTL871X: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(False)
+[   14.319751] RTL871X: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(False)
+[   14.319883] RTL871X: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(False)
+[   14.320022] RTL871X: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(False)
+[   14.320154] RTL871X: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(False)
+[   14.320292] RTL871X: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(False)
+[   14.320410] RTL871X: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(False)
+[   14.320436] RTL871X: usb_write_port_cancel
+[   14.320544] RTL871X: ==> rtl8188eu_hal_deinit
+[   14.320940] RTL871X: bkeepfwalive(0)
+[   14.332320] RTL871X: SetHwReg8188E: bMacPwrCtrlOn=0
+[   14.332345] RTL871X: <=== rtw_ips_pwr_down..................... in 40ms
+[   14.428300] RTL871X: =>cfg80211_rtw_connect(wlan0) - Start to Connection
+[   14.428316] RTL871X: privacy=1, key=  (null), key_len=0, key_idx=0, auth_type=0
+[   14.428329] RTL871X: _rtw_pwr_wakeup call ips_leave....
+[   14.428336] RTL871X: ==>ips_leave cnts:1
+[   14.428341] RTL871X: ===>  rtw_ips_pwr_up..............
+[   14.428352] RTL871X: ===> ips_netdrv_open.........
+[   14.432284] RTL871X: SetHwReg8188E: bMacPwrCtrlOn=1
+[   14.432294] RTL871X: Set RF Chip ID to RF_6052 and RF type to 3.
+[   14.434040] RTL871X: rtl8188e_FirmwareDownload fw:NIC, size: 15414
+[   14.434060] RTL871X: rtl8188e_FirmwareDownload: fw_ver=16 fw_subver=0000 sig=0x88e1, Month=11, Date=58, Hour=16, Minute=3c
+[   14.474291] RTL871X: polling_fwdl_chksum: Checksum report OK! (1, 0ms), REG_MCUFWDL:0x00030005
+[   14.477279] RTL871X: =====> _8051Reset88E(): 8051 reset success .
+[   14.480160] RTL871X: _FWFreeToGo: Polling FW ready OK! (23, 10ms), REG_MCUFWDL:0x000300c6
+[   14.480169] RTL871X: FWDL success. write_fw:1, 40ms
+[   14.795454] ==> rtl8188e_iol_efuse_patch
+[   14.947613] RTL871X: pDM_Odm TxPowerTrackControl = 1
+[   14.947789] RTL871X: pDM_Odm TxPowerTrackControl = 1
+[   15.235283] RTL871X: rtl8188eu_hal_init in 810ms
+[   15.245412] RTL871X: wlan0Port-0  set opmode = 2
+[   15.246706] RTL871X: <===  rtw_ips_pwr_up.............. in 820ms
+[   15.246714] RTL871X: nolinked power save leave
+[   15.246781] RTL871X: ==> ips_leave.....LED(0x00028282)...
+[   15.246793] RTL871X: ssid=dkin, len=4
+[   15.246801] RTL871X: bssid=e4:c3:2a:e3:e9:b4
+[   15.246807] RTL871X: rtw_cfg80211_set_wpa_version, wpa_version=2
+[   15.246814] RTL871X: rtw_cfg80211_set_auth_type, nl80211_auth_type=0
+[   15.246819] RTL871X: cfg80211_rtw_connect, ie_len=22
+[   15.246825] RTL871X: set wpa_ie(length:22):
+[   15.246833] RTL871X: 0x30 0x14 0x01 0x00 0x00 0x0f 0xac 0x02
+[   15.246840] RTL871X: 0x01 0x00 0x00 0x0f 0xac 0x04 0x01 0x00
+[   15.246846] RTL871X: 0x00 0x0f 0xac 0x02 0x00 0x00 0x71 0x80
+[   15.246855] RTL871X: got wpa2_ie, wpa2_ielen:20
+[   15.247282] RTL871X: SetHwReg8188E, 4840, RCR= 700060ca
+[   15.247293] RTL871X: rtw_cfg80211_set_cipher, ucast=1, cipher=0xfac04
+[   15.247301] RTL871X: rtw_cfg80211_set_cipher, ucast=0, cipher=0xfac02
+[   15.247306] RTL871X: rtw_cfg80211_set_key_mgt, key_mgt=0xfac02
+[   15.247339] RTL871X: rtw_set_802_11_connect(wlan0)  fw_state=0x00000008
+[   15.247355] RTL871X: [by_bssid:1][assoc_ssid:dkin][to_roam:0] new candidate: dkin(e4:c3:2a:e3:e9:b4, ch2) rssi:-40
+[   15.247366] RTL871X: rtw_select_and_join_from_scanned_queue: candidate: dkin(e4:c3:2a:e3:e9:b4, ch:2)
+[   15.247376] RTL871X: link to Ralink AP
+[   15.247391] RTL871X: [HT] HAL Support STBC = 0x01
+[   15.247399] RTL871X: [HT] Declare supporting RX STBC = 1
+[   15.247443] RTL871X: set ssid:dot11AuthAlgrthm=2, dot11PrivacyAlgrthm=4, dot118021XGrpPrivacy=2
+[   15.247452] RTL871X: <=cfg80211_rtw_connect, ret 0
+[   15.247540] RTL871X: rtw_chk_start_clnt_join(wlan0) req: 2,1,1
+[   15.247549] RTL871X: rtw_chk_start_clnt_join(wlan0) ld_sta_num:0, ap_num:0
+[   15.247556] RTL871X: rtw_chk_start_clnt_join(wlan0) union: 2,1,1
+[   15.320739] RTL871X: OnBeacon: beacon keys ready
+[   15.320766] RTL871X: link to Ralink AP
+[   15.320784] RTL871X: start auth
+[   15.320810] RTL871X: issue_auth
+[   15.329668] RTL871X: OnAuthClient
+[   15.329691] RTL871X: auth success, start assoc
+[   15.329736] RTL871X: network.SupportedRates[0]=82
+[   15.329773] RTL871X: network.SupportedRates[1]=84
+[   15.329800] RTL871X: network.SupportedRates[2]=8B
+[   15.329814] RTL871X: network.SupportedRates[3]=96
+[   15.329826] RTL871X: network.SupportedRates[4]=12
+[   15.329842] RTL871X: network.SupportedRates[5]=24
+[   15.329854] RTL871X: network.SupportedRates[6]=48
+[   15.329865] RTL871X: network.SupportedRates[7]=6C
+[   15.329877] RTL871X: network.SupportedRates[8]=0C
+[   15.329889] RTL871X: network.SupportedRates[9]=18
+[   15.329900] RTL871X: network.SupportedRates[10]=30
+[   15.329912] RTL871X: network.SupportedRates[11]=60
+[   15.329927] RTL871X: bssrate_len = 12
+[   15.341316] RTL871X: OnAssocRsp
+[   15.341361] RTL871X: report_join_res(1)
+[   15.341384] RTL871X: rtw_joinbss_update_network
+[   15.341407] RTL871X: +rtw_update_ht_cap()
+[   15.341455] RTL871X: rtw_alloc_macid(wlan0) if1, hwaddr:e4:c3:2a:e3:e9:b4 macid:0
+[   15.341472] RTL871X: rtw_joinbss_update_stainfo
+[   15.341507] RTL871X: supp_mcs_set = ff, 00, 00, rf_type=3, tx_ra_bitmap=00000000000fffff
+[   15.341523] RTL871X: ### Set STA_(0) info ###
+[   15.341547] RTL871X: rtw_cfg80211_indicate_connect(wlan0)
+[   15.341594] RTL871X: pwdev->sme_state(b)=1
+[   15.341637] RTL871X: pwdev->sme_state(a)=1
+[   15.341653] RTL871X: assoc success
+[   15.342050] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   15.342346] RTL871X: HW_VAR_BASIC_RATE: 0x15f -> 0x15f -> 0x15f
+[   15.348678] RTL871X: WMM(0): 0, a42b
+[   15.348977] RTL871X: WMM(1): 0, a44f
+[   15.349196] RTL871X: WMM(2): 0, 5e4322
+[   15.349445] RTL871X: WMM(3): 0, 2f3222
+[   15.349465] RTL871X: wmm_para_seq(0): 0
+[   15.349479] RTL871X: wmm_para_seq(1): 1
+[   15.349491] RTL871X: wmm_para_seq(2): 2
+[   15.349503] RTL871X: wmm_para_seq(3): 3
+[   15.349516] RTL871X: HTOnAssocRsp
+[   15.350213] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x00, WirelessMode:0x0b, rate_bitmap:0x000ff015
+[   15.350243] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[   15.350243]   ==> rssi_level:0, rate_bitmap:0x000ff015
+[   15.352068] RTL871X: ### MacID(31),Set Max Tx RPT MID(32)
+[   15.352596] RTL871X: SetHwReg8188E(wlan0): [HW_VAR_MACID_WAKEUP] macid=0, org reg_0x48c=0x00000000
+[   15.355400] RTL871X: rtl8188e_set_FwJoinBssReport_cmd mstatus(1)
+[   15.360200] RTL871X: rtw_hal_set_fw_rsvd_page PageSize: 128, RsvdPageNUm: 8
+[   15.360232] RTL871X: LocPsPoll: 2
+[   15.360271] RTL871X: LocNullData: 3
+[   15.360290] RTL871X: LocQosNull: 4
+[   15.360309] RTL871X: rtw_hal_set_fw_rsvd_page PageNum(5), pktlen(578)
+[   15.360584] RTL871X: rtw_hal_set_fw_rsvd_page: Set RSVD page location to Fw ,TotalPacketLen(578), TotalPageNum(5)
+[   15.360608] RTL871X: RsvdPageLoc: ProbeRsp=0 PsPoll=2 Null=3 QoSNull=4 BTNull=0
+[   15.362199] RTL871X: wlan0: 1 DL RSVD page success! DLBcnCount:1, poll:1
+[   15.363185] RTL871X: Set RSVD page location to Fw.
+[   15.372661] RTL871X: =>mlmeext_joinbss_event_callback - End to Connection without 4-way
+[   15.423080] RTL871X: phydm_rssi_report mac_id:0, mac:e4:c3:2a:e3:e9:b4, rssi:60
+[   15.423094] RTL871X: phydm_rssi_report RAINFO - TP:UL, TxBF:DIS, STBC:DIS, Noisy:False, Firstcont:True
+[   15.437962] RTL871X: recv eapol packet
+[   15.440445] RTL871X: send eapol packet
+[   15.445332] RTL871X: recv eapol packet
+[   15.445741] RTL871X: send eapol packet
+[   15.446426] RTL871X: cfg80211_rtw_add_key(wlan0) adding key for e4:c3:2a:e3:e9:b4
+[   15.446436] RTL871X: cipher=0xfac04
+[   15.446441] RTL871X: key_len=0x10
+[   15.446446] RTL871X: seq_len=0x6
+[   15.446451] RTL871X: key_index=0
+[   15.446455] RTL871X: pairwise=1
+[   15.446462] RTL871X: rtw_cfg80211_set_encryption
+[   15.446493] RTL871X: rtw_cfg80211_set_encryption, : param->u.crypt.set_tx ==1
+[   15.446500] RTL871X:  ~~~~set sta key:unicastkey
+[   15.446535] RTL871X: set pairwise key camid:4, addr:e4:c3:2a:e3:e9:b4, kid:0, type:AES
+[   15.446571] RTL871X: rtw_cfg80211_set_encryption, ret=0
+[   15.446696] RTL871X: cfg80211_rtw_set_default_key(wlan0) key_index=0, unicast=1, multicast=0
+[   15.446991] RTL871X: cfg80211_rtw_add_key(wlan0) adding key for   (null)
+[   15.447000] RTL871X: cipher=0xfac02
+[   15.447005] RTL871X: key_len=0x20
+[   15.447054] RTL871X: seq_len=0x6
+[   15.447061] RTL871X: key_index=1
+[   15.447066] RTL871X: pairwise=0
+[   15.447073] RTL871X: rtw_cfg80211_set_encryption
+[   15.447097] RTL871X:  ~~~~set sta key:groupkey
+[   15.447106] RTL871X: ==> rtw_set_key algorithm(2),keyid(1),key_mask(0)
+[   15.447116] RTL871X: rtw_cfg80211_set_encryption, ret=0
+[   15.447878] RTL871X: cfg80211_rtw_change_station(wlan0)
+[   15.449058] RTL871X: set group key camid:5, addr:e4:c3:2a:e3:e9:b4, kid:1, type:TKIP
+[   15.453264] RTL871X: SetHwReg8188E, 4836, RCR= 700060ce
+[   17.012042] RTL871X: OnAction_back
+[   17.012112] RTL871X: OnAction_back, action=0
+[   17.014265] RTL871X: issue_addba_rsp_wait_ack(wlan0) ra=e4:c3:2a:e3:e9:b4 tid=0, acked, 1/3 in 0 ms
+[   17.258248] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x01, WirelessMode:0x0b, rate_bitmap:0x000f0000
+[   17.258284] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[   17.258284]   ==> rssi_level:1, rate_bitmap:0x000f0000
+[   41.561788] RTL871X: rtw_issue_addbareq_cmd, p=0
+[   41.562132] RTL871X: BA_starting_seqctrl = 295 for TID=0
+[   41.562220] RTL871X: issue_addba_req(wlan0) ra=e4:c3:2a:e3:e9:b4 tid=0
+[   41.584665] RTL871X: OnAction_back
+[   41.584755] RTL871X: OnAction_back, action=1
+[   41.584772] RTL871X: agg_enable for TID=0
+[   69.556889] init: udev-fallback-graphics main process (859) terminated with status 1
+[   69.880052] init: plymouth-splash main process (876) terminated with status 1
+[21263.251606] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x02, WirelessMode:0x0b, rate_bitmap:0x000ff000
+[21263.251640] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[21263.251640]   ==> rssi_level:2, rate_bitmap:0x000ff000
+[21347.253092] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x01, WirelessMode:0x0b, rate_bitmap:0x000f0000
+[21347.253127] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[21347.253127]   ==> rssi_level:1, rate_bitmap:0x000f0000
+[56691.252471] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x02, WirelessMode:0x0b, rate_bitmap:0x000ff000
+[56691.252507] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[56691.252507]   ==> rssi_level:2, rate_bitmap:0x000ff000
+[56731.252845] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x01, WirelessMode:0x0b, rate_bitmap:0x000f0000
+[56731.252880] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[56731.252880]   ==> rssi_level:1, rate_bitmap:0x000f0000
+[56984.721617] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56984.860539] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56985.043361] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56985.225562] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56985.408819] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56985.591374] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56985.773990] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56985.957755] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56986.139755] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56986.322885] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56986.505674] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56986.688498] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56986.871881] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56987.054071] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56987.236923] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56987.419932] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56987.603052] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56987.785484] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56987.968536] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56988.150991] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56988.334005] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56988.516452] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56988.700812] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[56988.882889] imx-ipuv3 2400000.ipu: IPU Warning - IPU_INT_STAT_10 = 0x00000001
+[60487.252473] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x02, WirelessMode:0x0b, rate_bitmap:0x000ff000
+[60487.252510] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[60487.252510]   ==> rssi_level:2, rate_bitmap:0x000ff000
+[60497.253470] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x01, WirelessMode:0x0b, rate_bitmap:0x000f0000
+[60497.253505] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[60497.253505]   ==> rssi_level:1, rate_bitmap:0x000f0000
+[61153.691280] init: anacron main process (20285) terminated with status 1
+[61165.252471] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x02, WirelessMode:0x0b, rate_bitmap:0x000ff000
+[61165.252505] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[61165.252505]   ==> rssi_level:2, rate_bitmap:0x000ff000
+[61171.253470] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x01, WirelessMode:0x0b, rate_bitmap:0x000f0000
+[61171.253504] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[61171.253504]   ==> rssi_level:1, rate_bitmap:0x000f0000
+[61243.252338] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x02, WirelessMode:0x0b, rate_bitmap:0x000ff000
+[61243.252372] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[61243.252372]   ==> rssi_level:2, rate_bitmap:0x000ff000
+[61659.252745] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x01, WirelessMode:0x0b, rate_bitmap:0x000f0000
+[61659.252779] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[61659.252779]   ==> rssi_level:1, rate_bitmap:0x000f0000
+[64665.253844] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x02, WirelessMode:0x0b, rate_bitmap:0x000ff000
+[64665.253879] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[64665.253879]   ==> rssi_level:2, rate_bitmap:0x000ff000
+[64929.252596] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x01, WirelessMode:0x0b, rate_bitmap:0x000f0000
+[64929.252633] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[64929.252633]   ==> rssi_level:1, rate_bitmap:0x000f0000
+[64977.252350] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x02, WirelessMode:0x0b, rate_bitmap:0x000ff000
+[64977.252384] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[64977.252384]   ==> rssi_level:2, rate_bitmap:0x000ff000
+[64983.252968] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x01, WirelessMode:0x0b, rate_bitmap:0x000f0000
+[64983.253004] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[64983.253004]   ==> rssi_level:1, rate_bitmap:0x000f0000
+[66791.252722] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x02, WirelessMode:0x0b, rate_bitmap:0x000ff000
+[66791.252758] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[66791.252758]   ==> rssi_level:2, rate_bitmap:0x000ff000
+[66795.252716] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x01, WirelessMode:0x0b, rate_bitmap:0x000f0000
+[66795.252748] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[66795.252748]   ==> rssi_level:1, rate_bitmap:0x000f0000
+[67841.251984] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x02, WirelessMode:0x0b, rate_bitmap:0x000ff000
+[67841.252018] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[67841.252018]   ==> rssi_level:2, rate_bitmap:0x000ff000
+[67845.253092] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x01, WirelessMode:0x0b, rate_bitmap:0x000f0000
+[67845.253126] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[67845.253126]   ==> rssi_level:1, rate_bitmap:0x000f0000
+[68981.251213] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x02, WirelessMode:0x0b, rate_bitmap:0x000ff000
+[68981.251248] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[68981.251248]   ==> rssi_level:2, rate_bitmap:0x000ff000
+[69153.252843] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x01, WirelessMode:0x0b, rate_bitmap:0x000f0000
+[69153.252877] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[69153.252877]   ==> rssi_level:1, rate_bitmap:0x000f0000
+[69327.252846] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x02, WirelessMode:0x0b, rate_bitmap:0x000ff000
+[69327.252881] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[69327.252881]   ==> rssi_level:2, rate_bitmap:0x000ff000
+[69369.252336] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x01, WirelessMode:0x0b, rate_bitmap:0x000f0000
+[69369.252373] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[69369.252373]   ==> rssi_level:1, rate_bitmap:0x000f0000
+[69579.252349] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x02, WirelessMode:0x0b, rate_bitmap:0x000ff000
+[69579.252384] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[69579.252384]   ==> rssi_level:2, rate_bitmap:0x000ff000
+[69931.253095] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x01, WirelessMode:0x0b, rate_bitmap:0x000f0000
+[69931.253130] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[69931.253130]   ==> rssi_level:1, rate_bitmap:0x000f0000
+[70363.251984] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x02, WirelessMode:0x0b, rate_bitmap:0x000ff000
+[70363.252019] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[70363.252019]   ==> rssi_level:2, rate_bitmap:0x000ff000
+[70403.253219] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x01, WirelessMode:0x0b, rate_bitmap:0x000f0000
+[70403.253256] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[70403.253256]   ==> rssi_level:1, rate_bitmap:0x000f0000
+[71111.252214] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x02, WirelessMode:0x0b, rate_bitmap:0x000ff000
+[71111.252249] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[71111.252249]   ==> rssi_level:2, rate_bitmap:0x000ff000
+[71117.253095] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x01, WirelessMode:0x0b, rate_bitmap:0x000f0000
+[71117.253131] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[71117.253131]   ==> rssi_level:1, rate_bitmap:0x000f0000
+[72427.252214] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x02, WirelessMode:0x0b, rate_bitmap:0x000ff000
+[72427.252251] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[72427.252251]   ==> rssi_level:2, rate_bitmap:0x000ff000
+[72433.252468] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x01, WirelessMode:0x0b, rate_bitmap:0x000f0000
+[72433.252503] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[72433.252503]   ==> rssi_level:1, rate_bitmap:0x000f0000
+[74073.252845] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x02, WirelessMode:0x0b, rate_bitmap:0x000ff000
+[74073.252880] RTL871X: UpdateHalRAMask8188E => mac_id:0, rate_id:0, networkType:0x0b, mask:0x000fffff
+[74073.252880]   ==> rssi_level:2, rate_bitmap:0x000ff000
+[74099.252722] RTL871X: ODM_Get_Rate_Bitmap ==> rssi_level:0x01, WirelessMode:0x0b, rate_bitmap:0x000f0000
+[74099.252756] RTL871X: UpdateHalRAMask8188E => mac_id:0, r
