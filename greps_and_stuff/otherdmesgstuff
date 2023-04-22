@@ -1,0 +1,40 @@
+
+[74099.252756]   ==> rssi_level:1, rate_bitmap:0x000f0000
+root@hexa:~# dmesg | grep -i serial
+[    0.362311] Serial: IMX driver
+[    0.362638] 2020000.serial: ttymxc0 at MMIO 0x2020000 (irq = 58) is a IMX
+[    1.120410] 21ec000.serial: ttymxc2 at MMIO 0x21ec000 (irq = 60) is a IMX
+[    1.127535] serial: Freescale lpuart driver
+root@hexa:~#
+
+
+
+
+
+CMD0075: OK
+EVT: TEMPERATURE: 33.0
+EVT: POWER: SOC43VOLT7.582
+EVTLOG: POWER: current -718.12MDCMD0078: CMD0080: OK
+CMD0081: OK
+CMD0082: OK
+CMD0083: OK
+C0086: OK
+87: OK
+CMD0089: OK
+CMD0090: OK
+CMD0091: OK
+CMD0092: OK
+CMD0093: OK
+CMD0094: OK
+CMD0095: OK
+CMD0096: OK
+CMD0097: OK
+CMD0098: OK
+CM
+CMD0100: OK
+CMD0101: OK
+
+
+
+these commands are for the rotatioon
+my command for the legs is CMD7234
