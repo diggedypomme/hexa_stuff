@@ -1,0 +1,68 @@
+
+root@hexa:~# ls -l /proc/[0-9]*/fd/* |grep /dev/ttymxc2
+ls: cannot access /proc/1160/fd/255: No such file or directory
+ls: cannot access /proc/1160/fd/3: No such file or directory
+ls: cannot access /proc/1161/fd/255: No such file or directory
+ls: cannot access /proc/1161/fd/3: No such file or directory
+lrwx------ 1 root     root     64 Apr 22 11:39 /proc/1053/fd/7 -> /dev/ttymxc2
+lrwx------ 1 explorer explorer 64 Apr 22 11:39 /proc/1063/fd/7 -> /dev/ttymxc2
+lrwx------ 1 root     root     64 Apr 22 11:39 /proc/710/fd/7 -> /dev/ttymxc2     # 
+lrwx------ 1 root     root     64 Apr 22 11:39 /proc/785/fd/3 -> /dev/ttymxc2
+lrwx------ 1 root     root     64 Apr 22 11:39 /proc/785/fd/4 -> /dev/ttymxc2
+lrwx------ 1 root     root     64 Apr 22 11:39 /proc/785/fd/5 -> /dev/ttymxc2
+lrwx------ 1 root     root     64 Apr 22 11:39 /proc/785/fd/6 -> /dev/ttymxc2
+lrwx------ 1 root     root     64 Apr 22 11:39 /proc/785/fd/7 -> /dev/ttymxc2
+lrwx------ 1 root     root     64 Apr 22 11:39 /proc/835/fd/3 -> /dev/ttymxc2
+lrwx------ 1 root     root     64 Apr 22 11:39 /proc/835/fd/4 -> /dev/ttymxc2
+lrwx------ 1 root     root     64 Apr 22 11:39 /proc/835/fd/5 -> /dev/ttymxc2
+lrwx------ 1 root     root     64 Apr 22 11:39 /proc/835/fd/6 -> /dev/ttymxc2
+lrwx------ 1 root     root     64 Apr 22 11:39 /proc/835/fd/7 -> /dev/ttymxc2
+
+
+
+
+clock_gettime(CLOCK_MONOTONIC, {578, 622195732}) = 0
+read(5, "\32\377\204\1\21LogSender.SendLog\1\376\v\320\0\3\n\0\0", 4096) = 31
+futex(0x10a2482c, FUTEX_WAKE, 1)        = 1
+read(5, 0x10b1e000, 4096)               = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x707a2c, FUTEX_WAKE, 1)          = 1
+futex(0x7079b8, FUTEX_WAKE, 1)          = 1
+futex(0x70813c, FUTEX_WAIT, 0, NULL)    = 0
+futex(0x70813c, FUTEX_WAIT, 0, NULL)    = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x70813c, FUTEX_WAIT, 0, NULL)    = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x70813c, FUTEX_WAIT, 0, NULL)    = 0
+epoll_wait(4, {}, 128, 0)               = 0
+epoll_wait(4, {{EPOLLOUT, {u32=1967906640, u64=1967906640}}}, 128, -1) = 1
+epoll_wait(4, {{EPOLLIN|EPOLLOUT, {u32=1967906640, u64=1967906640}}}, 128, -1) = 1
+clock_gettime(CLOCK_MONOTONIC, {578, 742545732}) = 0
+read(5, "\32\377\204\1\21LogSender.SendLog\1\376\v\323\0\3\n\0\0", 4096) = 31
+futex(0x10a24d2c, FUTEX_WAKE, 1)        = 1
+read(5, ")\377\204\1 Hexabody.StopWalkingContinu"..., 4096) = 50
+futex(0x10b2432c, FUTEX_WAKE, 1)        = 1
+read(5, 0x10b1e000, 4096)               = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x70813c, FUTEX_WAIT, 0, NULL)    = 0
+read(5, "%\377\204\1\34Hexabody.WalkingContinuousl"..., 4096) = 46
+
+
+=------------
+
+
+root@hexa:~# strace -p 785
+Process 785 attached
+select(17, [8 9 11 15 16], [], [], {9, 195987}) = 0 (Timeout)
+clock_gettime(0x7 /* CLOCK_??? */, {722, 700619416}) = 0
+clock_gettime(0x7 /* CLOCK_??? */, {722, 701195750}) = 0
+clock_gettime(0x7 /* CLOCK_??? */, {722, 703928750}) = 0
+clock_gettime(0x7 /* CLOCK_??? */, {722, 704411750}) = 0
+select(17, [8 9 11 15 16], [], [], {9, 734170}) = 0 (Timeout)
+clock_gettime(0x7 /* CLOCK_??? */, {732, 449164084}) = 0
+clock_gettime(0x7 /* CLOCK_??? */, {732, 449519751}) = 0
+clock_gettime(0x7 /* CLOCK_??? */, {732, 449934084}) = 0
+
+
+
+root@hexa:~# strace -p 835
+Process 835 attached
+select(22, [10 11], [], NULL, {2259, 535592}^CProcess 835 detached
+ <detached ...>
+
