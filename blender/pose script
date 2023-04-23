@@ -1,0 +1,19 @@
+import bpy
+from math import degrees
+
+armature = bpy.context.object
+
+rot_bone = armature.pose.bones.get("ROT")
+mid_bone = armature.pose.bones.get("MID")
+tip_bone = armature.pose.bones.get("TIP")
+
+if rot_bone and mid_bone and tip_bone:
+    rot_angles = [degrees(a) for a in rot_bone.matrix_channel.to_euler()]
+    mid_angles = [degrees(a) for a in mid_bone.matrix_channel.to_euler()]
+    tip_angles = [degrees(a) for a in tip_bone.matrix_channel.to_euler()]
+
+    print("ROT angles:", rot_angles)
+    print("MID angles:", mid_angles)
+    print("TIP angles:", tip_angles)
+else:
+    print("One or more bones not found.")
