@@ -1,0 +1,71 @@
+import bpy
+from math import degrees
+import numpy as np
+import math
+
+leg_array = []
+
+# Loop over each leg
+for leg_num in range(1):
+    # Create an empty list for the leg data
+    leg_data = []
+    
+    # Get the armature object and its pose
+    ob = bpy.data.objects[f"Leg{leg_num}"]
+    
+    # Loop over each bone in the leg
+    for pbone in ob.pose.bones:
+        m = pbone.matrix
+        if pbone.parent:
+            m = pbone.parent.matrix.inverted() @ m
+        # convert the matrix to euler angles in degrees
+        rot = m.to_euler()
+        
+        if pbone.name.startswith("rotate_"):
+            leg_data.append(round(degrees(rot[2])))
+        elif pbone.name.startswith("mid_"):
+            leg_data.append(round(degrees(rot[0])))
+        elif pbone.name.startswith("tip_"):
+            leg_data.append(round(degrees(rot[0])))
+    
+    # Append the leg data to the leg array
+    leg_array.append(leg_data)
+    
+print(leg_array)
+
+
+def map_values(x, in_min, in_max, out_min, out_max):
+    return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min
+
+
+mapped_values = []
+mapped_values.append(map_values(leg_array[0][0], -48, 48, 1250, 1750))
+mapped_values.append(map_values(leg_array[0][1], -90, 90, 1000, 2000))
+mapped_values.append(map_values(leg_array[0][2], -90, 90, 1000, 2000))
+
+print(mapped_values)
+
+for i in range(len(mapped_values)):
+    mapped_values[i] = math.floor(mapped_values[i])
+
+print(mapped_values)
+print(mapped_values[0])
+print(mapped_values[1])
+print(mapped_values[2])
+robstring="V000P{}V001P{}V002P{}".format(mapped_values[0],mapped_values[1],mapped_values[2])
+print(robstring)
+
+def generate_output_string(leg_array):
+    output_array = []
+    leg_id = 0
+    for leg in leg_array:
+        output_string = "V{:03d}P{:04d}".format(leg_id, leg[0])
+        output_array.append(output_string)
+        for value in leg[1:]:
+            output_string = "V{:03d}P{:04d}".format(leg_id, value)
+            output_array.append(output_string)
+        leg_id += 1
+    return output_array
+
+leg_strings = generate_output_string(leg_array)
+print(leg_strings)
