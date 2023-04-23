@@ -52,7 +52,7 @@ longstring=longstring+"V008"+"P"+document.getElementById( "box_8" ).value
 longstring=longstring+"V007"+"P"+document.getElementById( "box_7" ).value
 longstring=longstring+"V006"+"P"+document.getElementById( "box_6" ).value
 
-const url = '/send/'+longstring;
+const url = '/send/'+longstring+"T0150";
 const params = {
   method: 'GET',
   headers: {
