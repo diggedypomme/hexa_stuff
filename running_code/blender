@@ -2,70 +2,190 @@ import bpy
 from math import degrees
 import numpy as np
 import math
+import requests
+import time
+
+send_directly=True # this is to send it through to the bot
+move_head=True
 
 leg_array = []
 
-# Loop over each leg
-for leg_num in range(1):
-    # Create an empty list for the leg data
-    leg_data = []
-    
-    # Get the armature object and its pose
-    ob = bpy.data.objects[f"Leg{leg_num}"]
-    
-    # Loop over each bone in the leg
-    for pbone in ob.pose.bones:
-        m = pbone.matrix
-        if pbone.parent:
-            m = pbone.parent.matrix.inverted() @ m
-        # convert the matrix to euler angles in degrees
-        rot = m.to_euler()
+def begin():
+
+    # Loop over each leg
+    for leg_num in range(6):
+        print("----------------------------- Leg {} -------".format(leg_num))
+        # Create an empty list for the leg data
+        leg_data = []
         
-        if pbone.name.startswith("rotate_"):
-            leg_data.append(round(degrees(rot[2])))
-        elif pbone.name.startswith("mid_"):
-            leg_data.append(round(degrees(rot[0])))
-        elif pbone.name.startswith("tip_"):
-            leg_data.append(round(degrees(rot[0])))
-    
-    # Append the leg data to the leg array
-    leg_array.append(leg_data)
-    
-print(leg_array)
+        # Get the armature object and its pose
+        ob = bpy.data.objects[f"Leg{leg_num}"]
+        
+        # Loop over each bone in the leg
+        for pbone in ob.pose.bones:
+            m = pbone.matrix
+            if pbone.parent:
+                m = pbone.parent.matrix.inverted() @ m
+            # convert the matrix to euler angles in degrees
+            rot = m.to_euler()
+            
+            if pbone.name.startswith("rotate_"):
+                leg_data.append(round(degrees(rot[2])))
+            elif pbone.name.startswith("mid_"):
+                leg_data.append(round(degrees(rot[0])))
+            elif pbone.name.startswith("tip_"):
+                leg_data.append(round(degrees(rot[0])))
+        
+        # Append the leg data to the leg array
+        leg_array.append(leg_data)
+        print("--------xx---------")
+        
+    print(leg_array)
+    mapping_values(leg_array)
+
 
 
 def map_values(x, in_min, in_max, out_min, out_max):
     return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min
 
-
-mapped_values = []
-mapped_values.append(map_values(leg_array[0][0], -48, 48, 1250, 1750))
-mapped_values.append(map_values(leg_array[0][1], -90, 90, 1000, 2000))
-mapped_values.append(map_values(leg_array[0][2], -90, 90, 1000, 2000))
-
-print(mapped_values)
-
-for i in range(len(mapped_values)):
-    mapped_values[i] = math.floor(mapped_values[i])
-
-print(mapped_values)
-print(mapped_values[0])
-print(mapped_values[1])
-print(mapped_values[2])
-robstring="V000P{}V001P{}V002P{}".format(mapped_values[0],mapped_values[1],mapped_values[2])
-print(robstring)
-
-def generate_output_string(leg_array):
-    output_array = []
-    leg_id = 0
+def mapping_values(leg_array):
+    
+    v_number = 0
+    mapped_values = []
+    longrobstring=""
     for leg in leg_array:
-        output_string = "V{:03d}P{:04d}".format(leg_id, leg[0])
-        output_array.append(output_string)
-        for value in leg[1:]:
-            output_string = "V{:03d}P{:04d}".format(leg_id, value)
-            output_array.append(output_string)
-        leg_id += 1
-    return output_array
+        
+        mapped_values_inner = []
+        mapped_values_inner.append(math.floor(2000-(map_values(leg[0], -48, 48, 1250, 1750))+1000))
+        mapped_values_inner.append(math.floor(2000-(map_values(leg[1], -90, 90, 1000, 2000))+1000))
+        mapped_values_inner.append(math.floor(2000-(map_values(leg[2], -90, 90, 1000, 2000))+1000))
+        mapped_values.append(mapped_values_inner)
+        #for i in range(len(mapped_values)):
+        #    mapped_values[i] = math.floor(mapped_values[i])
 
-leg_strings = generate_output_string(leg_array)
-print(leg_strings)
+        robstring="V{:03d}P{:04d}V{:03d}P{:04d}V{:03d}P{:04d}".format(v_number,mapped_values_inner[2],v_number+1,mapped_values_inner[1],v_number+2,mapped_values_inner[0])
+        print("{}{}".format(robstring,"T0150"))
+        print("------------------")
+        longrobstring="{}{}".format(longrobstring,robstring)
+        v_number=v_number+3
+       
+    
+    
+    
+    #mapped_values = []
+    #mapped_values.append(2000-(map_values(leg_array[0][0], -48, 48, 1250, 1750))+1000)
+    #mapped_values.append(2000-(map_values(leg_array[0][1], -90, 90, 1000, 2000))+1000)
+    #mapped_values.append(2000-(map_values(leg_array[0][2], -90, 90, 1000, 2000))+1000)
+
+    #print(mapped_values)
+
+    #for i in range(len(mapped_values)):
+    #    mapped_values[i] = math.floor(mapped_values[i])
+    print("--")
+    print(longrobstring)
+    print("xx")
+    #print(mapped_values)
+    #print(mapped_values[0])
+    #print(mapped_values[1])
+    #print(mapped_values[2])
+    #robstring="V000P{:04d}V001P{:04d}V002P{:04d}".format(mapped_values[2],mapped_values[1],mapped_values[0])
+    #finished_robstring
+    #print(robstring)
+
+    #def generate_output_string(leg_array):
+    #    output_array = []
+    #    leg_id = 0
+    #    for leg in leg_array:
+    #        output_string = "V{:03d}P{:04d}".format(leg_id, leg[0])
+    #        output_array.append(output_string)
+    #        for value in leg[1:]:
+    #            output_string = "V{:03d}P{:04d}".format(leg_id, value)
+    #            output_array.append(output_string)
+    #        leg_id += 1
+    #    return output_array
+
+    #leg_strings = generate_output_string(leg_array)
+    #print(leg_strings)
+    print("----vvv")
+    
+    print("{}{}".format(longrobstring,"T0150"))
+
+
+    if send_directly==True:
+        print("sending to the robot")
+
+
+        url = "http://192.168.0.222:5000/send/"
+        
+        if move_head==True:
+            get_head_value=get_head()
+            address = "{}{}{}".format(longrobstring,get_head_value, "T0150")
+        else:
+            address = "{}{}".format(longrobstring, "T0150")
+        response = requests.post(url + address)
+
+        if response.status_code == 200:
+            print("Request sent successfully")
+        else:
+            print("Failed to send request")
+    else:
+        get_head_value=get_head()
+        address = "{}{}{}".format(longrobstring,get_head_value, "T0150")
+        print(address)        
+            
+        
+        
+#def get_rotation(object):
+#    matrix_rotation = object.worldOrientation
+#    euler_rotation = matrix_rotation.to_euler()
+#    degrees_rotation = [math.degrees(a) for a in euler_rotation]
+#    return degrees_rotation
+
+#obj = bpy.data.objects.get("head")
+#
+#print(obj)
+#print(dir(obj))
+#
+
+
+def get_head():
+    
+    
+
+    obj = bpy.data.objects.get("head")
+    rot_world_quat = obj.matrix_world.to_quaternion() @ obj.rotation_quaternion
+
+    # Get the rotation in world space as Euler angles (in radians)
+    rot_world_euler = rot_world_quat.to_euler()
+
+    print(rot_world_euler)
+
+
+    obj = bpy.context.scene.objects["head"]
+    euler = obj.rotation_euler
+
+    angle = euler.z
+    full_circle=2400
+    # Map the angle to a value between 0 and 2400
+    mapped_value = (angle % (2*math.pi)) / (2*math.pi) * full_circle
+
+    print(math.floor(mapped_value))
+    
+    
+    return("V018P{:04d}".format(full_circle-(math.floor(mapped_value))))
+
+
+#if obj is not None and obj.name in bpy.context.scene.objects:
+#    # Access the object's rotation
+#    rotation = obj.rotation_euler
+#    print(rotation)
+#else:
+#    print("Object is not valid or has not been properly initialize)
+
+
+loopcount=20
+while loopcount>0:
+    begin()
+    print (loopcount)
+    time.sleep(5)
+    loopcount=loopcount-1
