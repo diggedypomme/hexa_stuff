@@ -68,3 +68,15 @@ Things to test: <BR>
 V0001763V0011450V0021515V0031692V0041383V0051533V0061737V0071448V0081398V0091713V0101413V0111424V0121670V0131359V0141544V0151768V0161430V0171515
 
 echo "CMD7234 V0001763V0011450V0021515V0031692V0041383V0051533V0061737V0071448V0081398V0091713V0101413V0111424V0121670V0131359V0141544V0151768V0161430V0171515T0150##\r" > /dev/ttymxc2
+
+
+root@hexa:~# netstat -tulpn | grep LISTEN
+tcp        0      0 0.0.0.0:5000            0.0.0.0:*               LISTEN      1067/python
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      534/sshd
+tcp6       0      0 :::7588                 :::*                    LISTEN      722/mind.d
+tcp6       0      0 :::7589                 :::*                    LISTEN      722/mind.d
+tcp6       0      0 :::7600                 :::*                    LISTEN      1743/explorer
+tcp6       0      0 :::22                   :::*                    LISTEN      534/sshd
+
+this address shows the images
+https://192.168.0.222:7600/
