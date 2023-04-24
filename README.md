@@ -80,3 +80,7 @@ tcp6       0      0 :::22                   :::*                    LISTEN      
 
 this address shows the images
 https://192.168.0.222:7600/
+
+     
+     
+     http://192.168.0.222:7588/ - this is the non https one
