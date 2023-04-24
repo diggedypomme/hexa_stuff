@@ -1,0 +1,36 @@
+root@hexa:~# /var/mind/skills/SimulatorKit/bin/SimulatorKit
+starting with default config...
+2023/04/24 01:15:55 rpc.Register: type Hexabody has no exported methods of suitable type
+[ERROR] 2023/04/24 01:16:05 unix.go:217: dial unix /var/mind/skills/receive-SimulatorKit/var/mind/rpc/receive-SimulatorKit.sock: connect: no such file or directory
+[ERROR] 2023/04/24 01:16:05 driver.go:48: stat /var/mind/skills/receive-SimulatorKit/var/mind/rpc/receive-SimulatorKit.sock: no such file or directory
+[Debug] 2023/04/24 01:16:05 SimulatorKit.go:39: resend
+[ERROR] 2023/04/24 01:16:05 driver.go:356: stat /var/mind/skills/receive-SimulatorKit/var/mind/rpc/receive-SimulatorKit.sock: no such file or directory
+[Debug] 2023/04/24 01:16:05 SimulatorKit.go:42: RESET
+[Debug] 2023/04/24 01:16:10 SimulatorKit.go:39: resend
+[ERROR] 2023/04/24 01:16:10 driver.go:356: stat /var/mind/skills/receive-SimulatorKit/var/mind/rpc/receive-SimulatorKit.sock: no such file or directory
+[Debug] 2023/04/24 01:16:10 SimulatorKit.go:42: RESET
+[Debug] 2023/04/24 01:16:15 SimulatorKit.go:39: resend
+[ERROR] 2023/04/24 01:16:15 driver.go:356: stat /var/mind/skills/receive-SimulatorKit/var/mind/rpc/receive-SimulatorKit.sock: no such file or directory
+[Debug] 2023/04/24 01:16:15 SimulatorKit.go:42: RESET
+^[[A[Debug] 2023/04/24 01:16:20 SimulatorKit.go:39: resend
+[ERROR] 2023/04/24 01:16:20 driver.go:356: stat /var/mind/skills/receive-SimulatorKit/var/mind/rpc/receive-SimulatorKit.sock: no such file or directory
+[Debug] 2023/04/24 01:16:20 SimulatorKit.go:42: RESET
+[Debug] 2023/04/24 01:16:25 SimulatorKit.go:39: resend
+[ERROR] 2023/04/24 01:16:25 driver.go:356: stat /var/mind/skills/receive-SimulatorKit/var/mind/rpc/receive-SimulatorKit.sock: no such file or directory
+[Debug] 2023/04/24 01:16:25 SimulatorKit.go:42: RESET
+^[[A
+[Debug] 2023/04/24 01:16:30 SimulatorKit.go:39: resend
+[ERROR] 2023/04/24 01:16:30 driver.go:356: stat /var/mind/skills/receive-SimulatorKit/var/mind/rpc/receive-SimulatorKit.sock: no such file or directory
+[Debug] 2023/04/24 01:16:30 SimulatorKit.go:42: RESET
+[Debug] 2023/04/24 01:16:35 SimulatorKit.go:39: resend
+[ERROR] 2023/04/24 01:16:35 driver.go:356: stat /var/mind/skills/receive-SimulatorKit/var/mind/rpc/receive-SimulatorKit.sock: no such file or directory
+[Debug] 2023/04/24 01:16:35 SimulatorKit.go:42: RESET
+^C[ERROR] 2023/04/24 01:16:38 driver.go:70: stat /var/mind/skills/receive-SimulatorKit/var/mind/rpc/receive-SimulatorKit.sock: no such file or directory
+root@hexa:~#
+
+
+oot@hexa:/var/mind/skills# netstat -tulpn | grep LISTEN
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      538/sshd
+tcp6       0      0 :::7588                 :::*                    LISTEN      690/mind.d
+tcp6       0      0 :::7589                 :::*                    LISTEN      690/mind.d
+tcp6       0      0 :::22                   :::*                    LISTEN      538/sshd
