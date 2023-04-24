@@ -1,0 +1,6 @@
+root@hexa:~# ls /dev/pts/
+0  2  3
+
+if you listen to 0 and you echo to it, you hear it there
+if you listen to 2 and you echo to it you get an answer on the one you echoed from
+if you listen to 3 and you echo to it, it comes out in other windows
