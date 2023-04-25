@@ -1,0 +1,278 @@
+Last login: Tue Apr 25 06:35:00 2023 from 192.168.0.2
+root@hexa:~# history
+    1  ls
+    2  ls /
+    3  top
+    4  cd /home
+    5  python new3.py
+    6  find / | grep servo
+    7  find / | grep battery
+    8  find / | grep power
+    9  find / | grep power > grep_power
+   10  ls
+   11  cat /sys/devices/system/cpu/power
+   12  ls /sys/devices/system/cpu/power
+   13  ls /sys/devices/system/cpu/power/runtime_status
+   14  tail /sys/devices/system/cpu/power/runtime_status
+   15  grep / | find walk
+   16  find / | grep walk
+   17  cat /usr/local/go/doc/codewalk/run
+   18  ls /us
+   19  find / | grep mind
+   20  ls /var/mind/skills/dance/bin
+   21  ls /var/mind/skills/dance/bin/dance
+   22  /var/mind/skills/dance/bin/dance
+   23  ls /var/mind/
+   24  ls /var/mind/rpc
+   25  cat /var/mind/rpc/explorer.sock
+   26  cd /var/mind
+   27  ls
+   28  cd skills/
+   29  ls
+   30  cd SimulatorKit/
+   31  ls
+   32  cd bin
+   33  ls
+   34  SimulatorKit
+   35  ./SimulatorKit
+   36  cd ..
+   37  c dlog
+   38  cd log
+   39  ls
+   40  cat stderr
+   41  cat stdout
+   42  find / | grep i2c
+   43  find / | grep i2c > grep_i2c
+   44  find / | grep rota
+   45  find / | grep rota > grep_rotate
+   46  cat /etc/logrotate.d
+   47  cat /etc/logrotate.d/apt
+   48  cat /dev/i2c-2
+   49  cat /dev/i2c-3
+   50  cat /dev/i2c-1
+   51  find / | grep rota > grep_rotate
+   52  find / | grep i2c > grep_i2c
+   53  find / | grep i2c
+   54  find / | grep motor
+   55  find / | grep batt
+   56  find / | grep bat
+   57  find / | grep batt
+   58  ls /dev
+   59  cat video0
+   60  cd /dev
+   61  cat video0
+   62  cd /home
+   63  dd if=/dev/video0 of=~/movie.mpg
+   64  find / | grep movie.mpg
+   65  ls /dev
+   66  tty ttymxc2
+   67  dmesg
+   68  dmesg | grep -i serial
+   69  cat ttymxc2
+   70  cd /dev
+   71  cat ttymxc2
+   72  minicom
+   73  tty
+   74  cat /dev/pts/0
+   75  cat ttymxc0
+   76  dmesg
+   77  cat dmesg
+   78  dmesg
+   79  cat ttymxc2
+   80  apt install minicom
+   81  minicom -D /dev/ttymxc2
+   82  top
+   83  strace -p 1063
+   84  strace -p 710
+   85  ls -l /proc/[0-9]*/fd/* |grep /dev/ttymxc2
+   86  strace -p 1053
+   87  strace -p 1063
+   88  strace -p 710
+   89  strace -p 785
+   90  strace -p 710
+   91  strace -p 835
+   92  apt install screen
+   93  screen /dev/ttymxc2
+   94  minicom
+   95  minicom /dev/virtualcom0
+   96  minicom -D /dev/virtualcom0
+   97  cat /dev/pts/1
+   98  ls /dev/pts
+   99  ls /dev/pts/0
+  100  cat /dev/pts/0
+  101  cat /dev/pts/1
+  102  cat /dev/pts/2
+  103  cat /dev/pts/3
+  104  minicom -D /dev/virtualcom0
+  105  netstat -tulpn | grep LISTEN
+  106  iptables -I INPUT -p tcp --dport 7588 --syn -j LOG --log-prefix "HTTPS SY                                                                                                                                                             N: "
+  107  tcpdump port 7588 and '(tcp-syn|tcp-ack)!=0'
+  108  ls /var/mind/skills/receive-dance/var/mind/rpc
+  109  ls /var/mind/skills/receive-dance/var/mind/
+  110  ls /var/mind/skills/receive-dance/var/
+  111  ls /var/mind/skills/receive-dance/
+  112  ls /var/mind/skills/
+  113  ls /var/mind/skills/SimulatorKit/
+  114  ls /var/mind/skills/SimulatorKit/data/
+  115  ls /var/mind/skills/SimulatorKit/bin
+  116  /var/mind/skills/SimulatorKit/bin/SimulatorKit
+  117  ls /dev/pts/
+  118  cat /dev/pts/0
+  119  cat /dev/pts/2
+  120  cat /dev/pts/3
+  121  cat /dev/pts/0
+  122  ls /dev
+  123  ls /dev/
+  124  ls /var/mind
+  125  ls /var/mind/rpc
+  126  cat /var/mind/rpc/receive-explorer.sock
+  127  lsof -i -a -p $PI
+  128  top
+  129  top | grep mind
+  130  lsof -i -a -p 690
+  131  find / | grep html
+  132  cat /home/index.html
+  133  cat /usr/bin/pod2html
+  134  find / -name "*.html" -type f -exec grep -H "404 page not found" {} \;
+  135  find / -name "*.html" -type f -exec grep -H "404" {} \;
+  136  find / -name "*.html" -type f -exec grep -H "light dark" {} \;
+  137  find / | grep mind
+  138  dmesg
+  139  dmesg | grep ttymxc2
+  140  dmesg | grep 7589
+  141  lsof -i -a -p 690
+  142  dmesg | grep 7588
+  143  wget 127.0.0.1:7588
+  144  curl 127.0.0.1:7588
+  145  find / | grep http://192.168.0.222:7588/
+  146  find / | grep hexabody
+  147  echo "CMD7234 V005P1533V004P1383V003P1692V017P1515V016P1430V015P1768V011P                                                                                                                                                             1424V010P1413V009P1713V014P1544V013P1359V012P1670V002P1515V001P1450V000P1763V008                                                                                                                                                             P1398V007P1448V006P1737T0150##\r" > /dev/ttymxc2
+  148  echo "CMD7234 V005P1533T0150##\r" > /dev/ttymxc2
+  149  echo "CMD7234 V005P1233T0150##\r" > /dev/ttymxc2
+  150  echo "CMD7234 V005P1263T0150##\r" > /dev/ttymxc2
+  151  echo "CMD7234 V005P1233T0150##\r" > /dev/ttymxc2
+  152  echo "CMD7234 V005P1263T0150##\r" > /dev/ttymxc2
+  153  echo "CMD7234 V005P1263T0150##" > /dev/ttymxc2
+  154  echo "CMD7234 V005P1463T0150##" > /dev/ttymxc2
+  155  echo "CMD7234 V003P1563T0150##" > /dev/ttymxc2
+  156  echo "CMD7234 V003P1963T0150##" > /dev/ttymxc2
+  157  echo "CMD7234 V003P1563T0150##" > /dev/ttymxc2
+  158  echo "CMD7234 V003P1163T0150##" > /dev/ttymxc2
+  159  echo "CMD7234 V003P1563T0150##" > /dev/ttymxc2
+  160  echo "CMD7234 V003P1163T0150##" > /dev/ttymxc2
+  161  echo "CMD7234 V003P1563T0150##" > /dev/ttymxc2
+  162  echo "CMD7234 V003P1163T0150##" > /dev/ttymxc2
+  163  echo "CMD7234 V003P1563T0150##" > /dev/ttymxc2
+  164  echo "CMD7234 V003P1163T0150##" > /dev/ttymxc2
+  165  echo "CMD7234 V003P1163T0150#" > /dev/ttymxc2
+  166  echo "CMD7234 V003P1563T0150" > /dev/ttymxc2
+  167  echo "CMD7234 V003P1163T0150" > /dev/ttymxc2
+  168  echo "CMD7234" > /dev/ttymxc2
+  169  echo "CMD7234 V003P1163T0150" > /dev/ttymxc2
+  170  echo "CMD7235 V003P1163T0150" > /dev/ttymxc2
+  171  echo "CMD7235 MoveHead" > /dev/ttymxc2
+  172  echo "CMD7235 movehead" > /dev/ttymxc2
+  173  echo "CMD7235 V003P1163T0150" > /dev/ttymxc2
+  174  echo "CMD7234 V003P1163T0550" > /dev/ttymxc2
+  175  echo "CMD7234 V005P1263T0150##\r" > /dev/ttymxc2
+  176  echo "CMD7235 V003P1163T0150" > /dev/ttymxc2
+  177  echo "CMD7234 V003P1163T0150" > /dev/ttymxc2
+  178  echo "CMD7234 V003P1563T0150" > /dev/ttymxc2
+  179  echo "CMD7234 V003P1163T0150" > /dev/ttymxc2
+  180  echo "CMD7234 V003P1563T0150" > /dev/ttymxc2
+  181  echo "CMD7234 V003P1163T0150" > /dev/ttymxc2
+  182  echo "CMD7234 V003P1163T0150" > /dev/pts/1
+  183  echo "CMD7234 V003P1163T0150" > /dev/ttymxc2
+  184  echo "CMD7234 V003P1563T0150" > /dev/ttymxc2
+  185  dmesg
+  186  tail dmesg
+  187  cat dmesg
+  188  find / | grep dmesg
+  189  tail /bin/dmesg
+  190  netstat -tulpn | grep LISTEN
+  191  strace -p 690
+  192  echo "CMD7234 V003P1163T0150" > /dev/ttymxc2
+  193  echo "CMD7234 V003P1563T0150" > /dev/ttymxc2
+  194  top
+  195  pkill
+  196  pkill 3430
+  197  top
+  198  pkill ?
+  199  kill
+  200  kill -p 3430
+  201  kill3430
+  202  kill 3430
+  203  top
+  204  top | grep tty
+  205  strace 3606
+  206  strace -p 3606
+  207  /bin/dmesg
+  208  strace 3606
+  209  /bin/dmesg
+  210  echo "CMD7234 V003P1163T0150" > /dev/ttymxc2
+  211  lsof | grep /dev/ttymxc2
+  212  lsof ?
+  213  lsof -h
+  214  lsof | grep /dev/ttymxc2
+  215  kill -p  3674
+  216  kill -p 3674
+  217  top
+  218  kill -p 3674
+  219  kill 3674
+  220  lsof | grep /dev/ttymxc2
+  221  kill 690
+  222  top
+  223  strace 3783
+  224  strace -p 3783
+  225  strace -s 3783
+  226  strace -s 2048 -p 3783
+  227  echo "CMD7234 V014P1493V013P1431V012P1722V002P1512V001P1319V00P2057V008P1                                                                                                                                                             590V007P1433V006P1832V005P1395V004P1434V003P1814V017P1516V016P1506V015P1591V011P                                                                                                                                                             1640V010P1244V009P954T0202" > /dev/ttymxc2
+  228  echo "CMD7234 V003P1563T0150" > /dev/ttymxc2
+  229  echo "CMD7234 V014P1493V013P1431V012P1722V002P1512V001P1319V00P2057V008P1                                                                                                                                                             590V007P1433V006P1832V005P1395V004P1434V003P1814V017P1516V016P1506V015P1591V011P                                                                                                                                                             1640V010P1244V009P954T0202" > /dev/ttymxc2
+  230  strace -s 2048 -p 3783
+  231  echo "CMD7234 V003P1563T0150" > /dev/ttymxc2
+  232  echo "CMD7234 V018P0690T0120" > /dev/ttymxc2
+  233  echo "CMD7234 V011P1442V010P1460V009P1758V014P1524V013P1234V012P1882V002P                                                                                                                                                             1481V001P1439V000P1776V008P1601V007P1434V006P1805V005P1443V004P1231V003P1910V017                                                                                                                                                             P1536V016P1434V015P1800T0083" > /dev/ttymxc2
+  234  echo "CMD7234 V005P1474V004P1429V003P1767V017P1580V016P1435V015P1788V011P                                                                                                                                                             1489V010P1460V009P1759V014P1403V013P1427V012P1749V002P1527V001P1439V000P1770V008                                                                                                                                                             P1556V007P1070V006P2040T0150" > /dev/ttymxc2
+  235  ls
+  236  cd /var/mind/skills
+  237  ls
+  238  ls dance
+  239  ls dance/bin
+  240  ls dance/bin/dance
+  241  netstat -tulpn | grep LISTEN
+  242  echo "hello" > /dev/pts/0
+  243  echo "hello" > /dev/pts/1
+  244  echo "hello" > /dev/pts/2
+  245  echo "help" > /dev/pts/2
+  246  echo "help" > /dev/pts/3
+  247  echo "help" > /dev/pts/0
+  248  echo "help" > /dev/pts/3
+  249  cat /dev/ttymxc2
+  250  echo "CMD1105 V018P0749T0120##\r"> /dev/ttymxc2
+  251  top
+  252  kill -p 3960
+  253  kill 3960
+  254  top
+  255  ls /dev/pts/
+  256  cat ls /dev/pts/0
+  257  ls /dev/pts/0
+  258  cat /dev/pts/0
+  259  cat /dev/pts/1
+  260  netstat -tulpn | grep LISTEN
+  261  cat /dev/pts/1
+  262  cat /dev/pts/0
+  263  top
+  264  strace -p 3783
+  265  strace -p 3783 | grep FUTEX
+  266  strace awk 'BEGIN{print "hello world"}' 2>&1 | grep 'get[^(]*()'
+  267  strace awk 'futex' 2>&1 | grep 'get[^(]*()'
+  268  strace  -p 3783 awk 'BEGIN{print "hello world"}' 2>&1 | grep 'get[^(]*()'
+  269  strace -p 3783
+  270  strace -s 2048 -p 3783
+  271  top
+  272  netstat -tulpn | grep LISTEN
+  273  yop
+  274  top
+  275  reboot
+  276  history
