@@ -1,6 +1,8 @@
 # hexa_stuff
 My progress with the hexa robot
 
+Note that this is all just WIP so might not make sense for anyone viewing it.
+
 
 This is where you got the apk from
 https://m.apkpure.com/hexa-programmable-robot/com.vincross.hexa
